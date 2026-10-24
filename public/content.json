@@ -1,0 +1,550 @@
+{
+  "profile": {
+    "name": "Tajul Islam Redwan",
+    "nameBn": "তাজুল ইসলাম রেদ্বওয়ান",
+    "headline": "Mechanical Engineering Student | Interested in Mechanical Design, Robotics & AI-Driven Solutions | Passionate about Sustainable Technology",
+    "location": "Sylhet, Bangladesh",
+    "status": "Open to internships, collaborations and meaningful connections",
+    "photo": "/assets/profile-v3.webp",
+    "email": "contact.tajuljayan@gmail.com",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/tajulislamredwan",
+      "facebook": "https://www.facebook.com/tajulislamredwan",
+      "linkedinActivity": "https://www.linkedin.com/in/tajulislamredwan/recent-activity/all/"
+    },
+    "interests": [
+      "Mechanical Design",
+      "Robotics",
+      "AI-Driven Solutions",
+      "Sustainable Technology",
+      "Product Development",
+      "Entrepreneurship"
+    ],
+    "whatsapp": "+8801333631969",
+    "whatsappDisplay": "+880 1333-631969"
+  },
+  "about": [
+    "I am a passionate and future-focused Mechanical Engineering student, currently developing my expertise in modern engineering tools, AI-driven solutions and sustainable technology.",
+    "Alongside my studies I run small ventures — Adhunik Path, an online book shop that started in February 2025 as LEXO BookShop, and Adhunik Style, a fashion brand — and I promote products as a Rokomari.com affiliate. This work has given me hands-on experience in sales, branding, digital marketing and customer service.",
+    "I enjoy solving real-world problems with technology, creativity and structured thinking, and I use AI tools such as ChatGPT, Gemini, Grok, Copilot, Claude and Lovable in my work. My goal is a career that combines engineering, innovation and entrepreneurship.",
+    "I am currently exploring Mechanical Engineering, Product Development, AI Productivity & Automation, Sustainability & Green Technology, and Business Strategy & Branding — and I am open to internships, global opportunities and collaborations."
+  ],
+  "ventures": [
+    {
+      "name": "Adhunik Path",
+      "nameBn": "আধুনিক পাঠ",
+      "type": "Online book shop",
+      "role": "Founder",
+      "period": "Feb 2025 – Present",
+      "tagline": "Your Knowledge, Your Identity",
+      "description": "Started in February 2025 as LEXO BookShop. In its first 4 months it served 50+ happy customers and earned 30+ positive reviews. After the original page was hacked, the shop returned as Adhunik Path with a new name, a new logo and full cash on delivery, plus home delivery and conditional free delivery.",
+      "highlights": [
+        "50+ customers in the first 4 months",
+        "30+ positive reviews",
+        "Full cash on delivery after relaunch"
+      ],
+      "link": "https://www.linkedin.com/posts/tajulislamredwan_%E0%A6%86%E0%A6%A7%E0%A6%A8%E0%A6%95-%E0%A6%AA%E0%A6%A0-adhunik-path-%E0%A6%8F%E0%A6%B0-%E0%A6%AF%E0%A6%A4%E0%A6%B0-%E0%A6%B6%E0%A6%B0-activity-7447877544005042176-w7si",
+      "linkLabel": "Read the story on LinkedIn",
+      "minor": false
+    },
+    {
+      "name": "Adhunik Style",
+      "type": "Fashion brand",
+      "role": "Owner",
+      "period": "Feb 2026 – Present",
+      "tagline": "Your Style, Your Identity — Redefine yourself with Adhunik Style",
+      "description": "A fashion brand. Its first website has since been closed by Adhunik Style.",
+      "highlights": [],
+      "link": "",
+      "linkLabel": "",
+      "minor": true
+    },
+    {
+      "name": "Adhunik AI",
+      "nameBn": "",
+      "type": "Project · Mar 2026",
+      "role": "Creator",
+      "period": "Mar 2026",
+      "tagline": "আপনার বুদ্ধিমান ফ্যাশন অ্যাসিস্ট্যান্ট — your intelligent fashion assistant",
+      "description": "An AI fashion-assistant project listed on my LinkedIn profile.",
+      "highlights": [],
+      "link": "",
+      "linkLabel": "",
+      "minor": true
+    }
+  ],
+  "experience": [
+    {
+      "role": "Computer Specialist (Part-time)",
+      "org": "New Xpressway",
+      "period": "Nov 2025 – Present",
+      "type": "Part-time",
+      "description": "Office and design work using Microsoft Office and Adobe Photoshop & Illustrator, plus printing, laminating and day-to-day management."
+    },
+    {
+      "role": "Founder",
+      "org": "Adhunik Path (formerly LEXO BookShop)",
+      "period": "Feb 2025 – Present",
+      "type": "Self-employed",
+      "description": "Online book shop."
+    },
+    {
+      "role": "Affiliate Marketer",
+      "org": "Rokomari.com",
+      "period": "2025 – Present",
+      "type": "Affiliate",
+      "description": "Promoting products through digital channels and supporting online sales."
+    },
+    {
+      "role": "Owner",
+      "org": "Adhunik Style",
+      "period": "Feb 2026 – Present",
+      "type": "Self-employed",
+      "description": "Running a fashion brand."
+    }
+  ],
+  "volunteering": [
+    {
+      "role": "Volunteer",
+      "org": "Bangladesh 64 District Blood Foundation",
+      "period": "Jun 2026 – Present",
+      "cause": "Health",
+      "logo": ""
+    },
+    {
+      "role": "Futurenation Volunteer (FNV)",
+      "org": "Futurenation",
+      "period": "Apr 2026 – Present",
+      "cause": "Education",
+      "logo": ""
+    },
+    {
+      "role": "Campus Ambassador",
+      "org": "Zero Olympiad",
+      "period": "Mar 2026 – Jul 2026",
+      "cause": "Education",
+      "logo": "/assets/org-zero-olympiad.webp"
+    },
+    {
+      "role": "Member",
+      "org": "Sylhet Polytechnic Institute Debate Club",
+      "period": "Mar 2026 – Present",
+      "cause": "Education",
+      "logo": ""
+    },
+    {
+      "role": "Campus Ambassador",
+      "org": "Boiyer Pata — বইয়ের পাতা",
+      "period": "Feb 2026 – Present",
+      "cause": "Education",
+      "logo": "/assets/org-boiyer-pata.webp"
+    },
+    {
+      "role": "Campus Ambassador",
+      "org": "Moddhoprachyo — মধ্যপ্রাচ্য",
+      "period": "Jan 2026 – Present",
+      "cause": "Politics",
+      "logo": ""
+    },
+    {
+      "role": "Volunteer",
+      "org": "Bangladesh Red Crescent Society (BDRCS)",
+      "period": "Nov 2025 – Present",
+      "cause": "Social Services",
+      "logo": "/assets/org-bdrcs.webp"
+    },
+    {
+      "role": "Writer",
+      "org": "Chintabiplob — চিন্তাবিপ্লব",
+      "period": "Aug 2025 – Present",
+      "cause": "Education",
+      "logo": "/assets/org-chintabiplob.webp"
+    },
+    {
+      "role": "Representative",
+      "org": "SHOLO — ষোলো",
+      "period": "Jun 2025 – Present",
+      "cause": "Education",
+      "logo": "/assets/org-sholo.webp"
+    },
+    {
+      "role": "Volunteer",
+      "org": "Bangladesh Anjuman-e-Talamiz-e-Islamia",
+      "period": "Jan 2022 – Present",
+      "cause": "Social Services",
+      "logo": "/assets/org-anjuman.webp"
+    }
+  ],
+  "education": [
+    {
+      "title": "Diploma in Engineering — Mechanical Engineering",
+      "org": "Sylhet Government Polytechnic Institute, Sylhet",
+      "period": "2024 – Present",
+      "note": "Focused on sustainable technology and product innovation."
+    },
+    {
+      "title": "SSC / Dakhil",
+      "org": "Kaskanakpur Gazir Mukam Dakhil Madrasah (KGMDM)",
+      "period": "Completed 2024",
+      "note": ""
+    },
+    {
+      "title": "Microsoft Office Application (360 hours)",
+      "org": "Computer course",
+      "period": "Jan 2024 – Aug 2024",
+      "note": ""
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Certified Sales Professional, Level 3",
+      "issuer": "National Skills Development Authority (NSDA)",
+      "date": "2026",
+      "category": "Professional",
+      "credentialId": "",
+      "link": "https://www.linkedin.com/posts/tajulislamredwan_im-happy-to-share-that-ive-obtained-a-new-activity-7510951944442593280-b1Mg",
+      "linkLabel": "LinkedIn post"
+    },
+    {
+      "title": "Smart Interview Technique",
+      "issuer": "Shomvob Academy",
+      "date": "2026",
+      "category": "Professional",
+      "credentialId": "",
+      "link": "https://www.linkedin.com/posts/tajulislamredwan_i-am-thrilled-to-share-that-i-have-successfully-activity-7454112494446620672-a5Vn",
+      "linkLabel": "LinkedIn post"
+    },
+    {
+      "title": "How to Write The Best CV",
+      "issuer": "Shomvob Academy",
+      "date": "2026",
+      "category": "Professional",
+      "credentialId": "",
+      "link": "https://www.linkedin.com/posts/tajulislamredwan_cvwriting-careerdevelopment-activity-7454074440700694528-LBED",
+      "linkLabel": "LinkedIn post"
+    },
+    {
+      "title": "Industrial Robotics (Batch-1)",
+      "issuer": "MuktoPaath",
+      "date": "Jan 2026",
+      "category": "Robotics & AI",
+      "credentialId": "MC-H1K9170564M1870B",
+      "link": "https://certificate.muktopaath.gov.bd/storage/uploads/certificates/387cb248adcd4d578f8682a94e82b1e8.jpg",
+      "linkLabel": "See credential"
+    },
+    {
+      "title": "Robotic Engineering (Batch-1)",
+      "issuer": "MuktoPaath",
+      "date": "Nov 2025",
+      "category": "Robotics & AI",
+      "credentialId": "MC-S1V9169417E1153I",
+      "link": "https://certificate.muktopaath.gov.bd/storage/uploads/certificates/68a588334a0e34b2c6b764b32d4b90f1.jpg",
+      "linkLabel": "See credential"
+    },
+    {
+      "title": "Career With AI",
+      "issuer": "Grameenphone Academy",
+      "date": "Nov 2025",
+      "category": "Robotics & AI",
+      "credentialId": "d346dad17535",
+      "link": "https://www.grameenphone.academy/cert/d346dad17535",
+      "linkLabel": "See credential"
+    },
+    {
+      "title": "Climate Change International Legal Regime — The Climate Change Convention, The Kyoto Protocol, The Paris Agreement",
+      "issuer": "UN Environment Programme / UN CC:Learn",
+      "date": "Mar 2026",
+      "category": "Climate & Sustainability",
+      "credentialId": "",
+      "link": "",
+      "linkLabel": ""
+    },
+    {
+      "title": "A Participant's Guide to the UN Climate Change Process",
+      "issuer": "UN CC:Learn",
+      "date": "Mar 2025",
+      "category": "Climate & Sustainability",
+      "credentialId": "",
+      "link": "",
+      "linkLabel": ""
+    },
+    {
+      "title": "Introduction to Sustainable Finance",
+      "issuer": "UN CC:Learn",
+      "date": "Mar 2025",
+      "category": "Climate & Sustainability",
+      "credentialId": "",
+      "link": "",
+      "linkLabel": ""
+    },
+    {
+      "title": "The National Implementation of the Paris Agreement",
+      "issuer": "UN CC:Learn",
+      "date": "Mar 2025",
+      "category": "Climate & Sustainability",
+      "credentialId": "",
+      "link": "",
+      "linkLabel": ""
+    },
+    {
+      "title": "Gender Equality and Human Rights in Climate Action and Renewable Energy (Modules 1–3)",
+      "issuer": "One UN Climate Change Learning Partnership (UN CC:Learn)",
+      "date": "Jan 2025",
+      "category": "Climate & Sustainability",
+      "credentialId": "",
+      "link": "",
+      "linkLabel": ""
+    },
+    {
+      "title": "JOTA-JOTI — Certificate of Participation",
+      "issuer": "World Organization of the Scout Movement (WOSM)",
+      "date": "Oct 2025",
+      "category": "Scouting",
+      "credentialId": "",
+      "link": "",
+      "linkLabel": ""
+    },
+    {
+      "title": "SfH 3: Being Safe Online",
+      "issuer": "World Organization of the Scout Movement (WOSM)",
+      "date": "Oct 2025",
+      "category": "Scouting",
+      "credentialId": "",
+      "link": "",
+      "linkLabel": ""
+    }
+  ],
+  "robotics": {
+    "intro": "A bilingual (Bengali + English) LinkedIn series where I profile one humanoid or service robot per post — who built it, when it was unveiled and what it is designed to do.",
+    "posts": [
+      {
+        "no": "1",
+        "title": "1X Neo Beta",
+        "date": "14 Feb 2026",
+        "image": "/assets/robot-1x-neo-beta.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr1-1xneobeta-share-7428298512859127808-GtOh"
+      },
+      {
+        "no": "2",
+        "title": "4NE-1",
+        "date": "14 Feb 2026",
+        "image": "/assets/robot-4ne-1.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr2-4ne-share-7428305866673647617-LtNi"
+      },
+      {
+        "no": "3",
+        "title": "Adam Robot",
+        "date": "14 Feb 2026",
+        "image": "/assets/robot-adam.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr3-adamabrrobot-share-7428311313883439104-ppxq"
+      },
+      {
+        "no": "4",
+        "title": "Alter 3",
+        "date": "14 Feb 2026",
+        "image": "/assets/robot-alter-3.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr4-alterabr3-share-7428315847661768704-1urb"
+      },
+      {
+        "no": "5",
+        "title": "Ameca",
+        "date": "14 Feb 2026",
+        "image": "/assets/robot-ameca.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr5-ameca-share-7428356419050971138-uVrd"
+      },
+      {
+        "no": "6",
+        "title": "Apollo A1",
+        "date": "14 Feb 2026",
+        "image": "/assets/robot-apollo-a1.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr6-apolloabra1-share-7428400955492171776-Fkm2"
+      },
+      {
+        "no": "7",
+        "title": "Asimo",
+        "date": "14 Feb 2026",
+        "image": "/assets/robot-asimo.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr7-asimo-share-7428429135473094656-hqDC"
+      },
+      {
+        "no": "8",
+        "title": "Atlas",
+        "date": "14 Feb 2026",
+        "image": "/assets/robot-atlas.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr8-atlas-share-7428434221930676224-dBoi"
+      },
+      {
+        "no": "9",
+        "title": "Beomni",
+        "date": "16 Feb 2026",
+        "image": "/assets/robot-beomni.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_robotics-beomni-share-7429072315130396672-LB0L"
+      },
+      {
+        "no": "10",
+        "title": "Booster T1",
+        "date": "16 Feb 2026",
+        "image": "/assets/robot-booster-t1.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr10-boosterabrt1-share-7429155735034322944-KqGY"
+      },
+      {
+        "no": "11",
+        "title": "Dictador Mika",
+        "date": "16 Feb 2026",
+        "image": "/assets/robot-dictador-mika.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr11-dictadorabrmika-share-7429482918697238529-Cbmf"
+      },
+      {
+        "no": "12",
+        "title": "Kime",
+        "date": "23 Feb 2026",
+        "image": "/assets/robot-kime.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr12-kime-share-7431630605143949313-wDyO"
+      },
+      {
+        "no": "13",
+        "title": "LimX CL-1",
+        "date": "24 Feb 2026",
+        "image": "/assets/robot-limx-cl-1.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr13-limxabrclabr1-share-7432088162425864193-7iQm"
+      },
+      {
+        "no": "14",
+        "title": "OceanOne",
+        "date": "26 Feb 2026",
+        "image": "/assets/robot-oceanone.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_roboticsabr14-oceanone-share-7432409101655166977-IWhi"
+      },
+      {
+        "no": "24",
+        "title": "Fourier GR 2",
+        "date": "2026",
+        "image": "",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_robotics24-fouriergr2-activity-7438140914176491520-ABsE"
+      },
+      {
+        "no": "25",
+        "title": "HRP-4C (Miim)",
+        "date": "2026",
+        "image": "",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_robotics25-hrp4c-activity-7438142012480180224-ay-r"
+      }
+    ]
+  },
+  "articles": [
+    {
+      "title": "কেন বই পড়বেন?",
+      "subtitle": "এক নিঃশব্দ বিপ্লবের গল্প — Why read books?",
+      "where": "LinkedIn article",
+      "date": "Feb 13, 2026",
+      "image": "/assets/article-why-read.webp",
+      "link": "https://www.linkedin.com/pulse/%E0%A6%95%E0%A6%A8-%E0%A6%AC%E0%A6%87-%E0%A6%AA%E0%A7%9C%E0%A6%AC%E0%A6%A8-tajul-islam-redwan-gkjgf",
+      "lang": "bn"
+    },
+    {
+      "title": "ব্ল্যাক হোল (Black Hole)",
+      "subtitle": "আলোর শেষ যেখানে, ভাবনার শুরু সেখানেই",
+      "where": "Chintabiplob — চিন্তাবিপ্লব",
+      "date": "Oct 15, 2025",
+      "image": "/assets/article-blackhole.webp",
+      "link": "https://chintabiplob.blogspot.com/2025/10/Blackhole.html",
+      "lang": "bn"
+    },
+    {
+      "title": "মহাবিশ্ব (Universe)",
+      "subtitle": "যেখানে বিজ্ঞান থামে সেখানে ইসলাম শুরু হয়",
+      "where": "Chintabiplob — চিন্তাবিপ্লব",
+      "date": "Sep 14, 2025",
+      "image": "/assets/article-universe.webp",
+      "link": "https://chintabiplob.blogspot.com/2025/09/blog-post_95.html",
+      "lang": "bn"
+    },
+    {
+      "title": "মাল্টিভার্স (Multiverse)",
+      "subtitle": "যদি তোমার মতো একজন আরেক পৃথিবীতে বসে ভাবছে ঠিক এই কথাগুলো?",
+      "where": "Chintabiplob — চিন্তাবিপ্লব",
+      "date": "Sep 27, 2025",
+      "image": "/assets/article-multiverse.webp",
+      "link": "https://chintabiplob.blogspot.com/2025/09/Multiverse%20Chintabiplob.html",
+      "lang": "bn"
+    },
+    {
+      "title": "এলিয়েন (Alien)",
+      "subtitle": "যদি সত্যিই কেউ সেখানে বসে আমাদের দিকেই তাকিয়ে থাকে?",
+      "where": "Chintabiplob — চিন্তাবিপ্লব",
+      "date": "Nov 25, 2025",
+      "image": "/assets/article-alien.webp",
+      "link": "https://chintabiplob.blogspot.com/2025/11/Alien.html",
+      "lang": "bn"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Engineering interests",
+      "items": [
+        "Mechanical design",
+        "Robotics",
+        "Industrial robotics (online course)",
+        "Product development",
+        "Sustainable & green technology"
+      ]
+    },
+    {
+      "group": "AI & digital tools",
+      "items": [
+        "ChatGPT",
+        "Gemini",
+        "Claude",
+        "Copilot",
+        "Grok",
+        "Lovable",
+        "Microsoft Office"
+      ]
+    },
+    {
+      "group": "Business",
+      "items": [
+        "Sales (NSDA Level 3)",
+        "Affiliate marketing",
+        "Digital marketing",
+        "Branding",
+        "Customer service"
+      ]
+    },
+    {
+      "group": "People",
+      "items": [
+        "Volunteering & community work",
+        "Campus ambassador roles",
+        "Debate",
+        "Writing in Bengali & English"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Bengali",
+      "level": "Native or bilingual"
+    },
+    {
+      "name": "English",
+      "level": "Professional working"
+    },
+    {
+      "name": "Arabic",
+      "level": "Elementary"
+    },
+    {
+      "name": "Urdu",
+      "level": "Elementary"
+    },
+    {
+      "name": "Hindi",
+      "level": "Elementary"
+    },
+    {
+      "name": "Turkish",
+      "level": "Elementary"
+    }
+  ]
+}

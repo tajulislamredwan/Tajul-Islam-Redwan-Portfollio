@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin · Tajul Islam Redwan</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/admin.css" />
+</head>
+<body>
+  <section id="login" class="login">
+    <form class="box" id="login-form">
+      <div class="mono">TR</div>
+      <h1>Admin sign in</h1>
+      <p class="muted">Manage messages and site content.</p>
+      <label>Password<input type="password" name="password" autocomplete="current-password" required /></label>
+      <button class="btn primary" type="submit">Sign in</button>
+      <p class="status" id="login-status" role="status"></p>
+      <a class="muted small" href="/">← Back to site</a>
+    </form>
+  </section>
+
+  <div id="app" hidden>
+    <header class="top">
+      <div class="brand"><span class="mono sm">TR</span> Admin</div>
+      <nav class="tabs" role="tablist">
+        <button data-tab="messages" class="on">Messages <span class="count" id="unread-count"></span></button>
+        <button data-tab="content">Content</button>
+        <button data-tab="stats">Stats</button>
+        <button data-tab="settings">Settings</button>
+      </nav>
+      <div class="right"><a href="/" target="_blank" rel="noopener">View site ↗</a><button class="btn ghost sm" id="logout">Sign out</button></div>
+    </header>
+
+    <main class="main">
+      <section data-panel="messages">
+        <div class="bar"><h2>Contact messages</h2><button class="btn ghost sm" id="refresh-msgs">Refresh</button></div>
+        <div id="msg-list" class="msg-list"></div>
+      </section>
+
+      <section data-panel="content" hidden>
+        <div class="bar">
+          <h2>Site content</h2>
+          <div class="actions">
+            <button class="btn ghost sm" id="mode-toggle">Switch to JSON</button>
+            <button class="btn ghost sm" id="reset-content">Reset to original</button>
+            <button class="btn primary sm" id="save-content">Save changes</button>
+          </div>
+        </div>
+        <p class="status" id="content-status" role="status"></p>
+        <details class="pending" open>
+          <summary>Needs your confirmation (<span id="pending-count">0</span>)</summary>
+          <ul id="pending-list"></ul>
+        </details>
+        <p class="hint">Edit any field, then press <b>Save changes</b>. Use <b>+ Add</b> / <b>Remove</b> for list items. Tick <b>hidden</b> on an item to hide it from the public site without deleting it. Image paths like <code>/assets/robot-atlas.webp</code> or full https:// image links work.</p>
+        <div id="tree" class="tree"></div>
+        <textarea id="json" class="json" spellcheck="false" hidden></textarea>
+      </section>
+
+      <section data-panel="stats" hidden>
+        <div class="bar"><h2>Visits</h2></div>
+        <p class="hint">Privacy-friendly: only a daily total is stored — no cookies, IP addresses or tracking.</p>
+        <div class="kpis" id="kpis"></div>
+        <div id="chart" class="chart"></div>
+      </section>
+
+      <section data-panel="settings" hidden>
+        <div class="bar"><h2>Change admin password</h2></div>
+        <form id="pw-form" class="pw">
+          <label>Current password<input type="password" name="current" autocomplete="current-password" required /></label>
+          <label>New password (min 10 characters)<input type="password" name="next" autocomplete="new-password" minlength="10" required /></label>
+          <button class="btn primary" type="submit">Update password</button>
+          <p class="status" id="pw-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="/admin.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tajul Islam Redwan | Mechanical Engineering Student | Robotics, AI & Sustainable Tech</title>
+  <meta name="description" content="Portfolio of Tajul Islam Redwan, a Mechanical Engineering diploma student from Sylhet, Bangladesh, interested in mechanical design, robotics, AI and sustainable technology." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Tajul Islam Redwan — Mechanical Engineering Student" />
+  <meta property="og:description" content="Mechanical design, robotics, AI-driven solutions and sustainable technology. Founder of Adhunik Path." />
+  <meta property="og:image" content="https://tajul.jayan.workers.dev/og-v3.png" />
+  <meta property="og:url" content="https://tajul.jayan.workers.dev/" />
+  <link rel="canonical" href="https://tajul.jayan.workers.dev/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Tajul Islam Redwan","alternateName":"তাজুল ইসলাম রেদ্বওয়ান","jobTitle":"Mechanical Engineering Diploma Student","email":"mailto:contact.tajuljayan@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Sylhet","addressCountry":"BD"},"sameAs":["https://www.linkedin.com/in/tajulislamredwan","https://www.facebook.com/tajulislamredwan"]}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="Home"><span class="mono">TR</span><span class="brand-name">Tajul Islam Redwan</span></a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <nav id="menu" class="menu" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#ventures">Ventures</a>
+        <a href="#experience">Experience</a>
+        <a href="#learning">Learning</a>
+        <a href="#writing">Writing</a>
+        <a href="#ask-ai" data-open-chat>Ask AI</a>
+        <a class="btn btn-sm btn-accent" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot"></span><span data-bind="profile.location">Sylhet, Bangladesh</span></p>
+          <h1><span data-bind="profile.name">Tajul Islam Redwan</span> <span class="bn sub-name" lang="bn" data-bind="profile.nameBn"></span></h1>
+          <p class="headline" data-bind="profile.headline"></p>
+          <div class="chips" id="interest-chips"></div>
+          <div class="cta">
+            <a class="btn btn-accent" href="#writing">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <div class="socials" id="socials"></div>
+        </div>
+        <div class="hero-photo">
+          <div class="ring" aria-hidden="true"></div>
+          <img id="profile-photo" src="/assets/profile-v3.webp" alt="Portrait of Tajul Islam Redwan" width="512" height="512" fetchpriority="high" />
+          <div class="badge-float"><strong id="stat-status">Open</strong><span>to internships & collaborations</span></div>
+        </div>
+      </div>
+      <div class="wrap">
+        <ul class="stats" id="stats"></ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap two-col">
+        <div>
+          <p class="kicker">About</p>
+          <h2>Engineering student, builder, writer.</h2>
+          <div id="about-text" class="prose"></div>
+        </div>
+        <aside class="card facts" aria-label="Quick facts">
+          <h3>Quick facts</h3>
+          <dl id="facts"></dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- VENTURES -->
+    <section id="ventures" class="section alt">
+      <div class="wrap">
+        <p class="kicker">Ventures & projects</p>
+        <h2>Things I'm building</h2>
+        <div class="cards-3" id="ventures-list"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE + VOLUNTEERING -->
+    <section id="experience" class="section">
+      <div class="wrap two-col wide-left">
+        <div>
+          <p class="kicker">Experience</p>
+          <h2>Work</h2>
+          <ol class="timeline" id="experience-list"></ol>
+        </div>
+        <div>
+          <p class="kicker">Volunteering & leadership</p>
+          <h2>Community</h2>
+          <ul class="vol-list" id="volunteer-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING -->
+    <section id="learning" class="section alt">
+      <div class="wrap">
+        <p class="kicker">Learning</p>
+        <h2>Education & certifications</h2>
+        <div class="edu" id="education-list"></div>
+        <div class="cert-head">
+          <h3>Licenses & certifications</h3>
+          <div class="filters" id="cert-filters" role="tablist" aria-label="Filter certifications"></div>
+        </div>
+        <div class="cert-grid" id="cert-list"></div>
+        <p class="fine">Online learning certificates and course badges — not professional engineering licenses.</p>
+        <div class="two-col skills-wrap">
+          <div>
+            <h3>Skills & interests</h3>
+            <div id="skills-list"></div>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <ul class="lang-list" id="lang-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section id="writing" class="section">
+      <div class="wrap">
+        <p class="kicker">Writing</p>
+        <h2>Robotics Explained <span class="muted">— a LinkedIn series</span></h2>
+        <p class="lead" id="robotics-intro"></p>
+        <div class="robot-grid" id="robot-list"></div>
+        <div class="center"><a class="btn btn-ghost" id="all-posts" target="_blank" rel="noopener">See all posts on LinkedIn ↗</a></div>
+
+        <h2 class="mt">Articles <span class="muted">— in Bengali</span></h2>
+        <div class="cards-3" id="article-list"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="wrap two-col">
+        <div>
+          <p class="kicker light">Contact</p>
+          <h2>Let's build something useful.</h2>
+          <p class="lead light">Open to internships, industrial attachment, student projects and collaborations in mechanical engineering, robotics, AI and sustainable technology.</p>
+          <div class="contact-links">
+            <a class="contact-row" id="email-link" href="#"><span class="ic">✉</span><span id="email-text"></span></a>
+            <button class="btn btn-sm btn-ghost-light" id="copy-email" type="button">Copy email</button>
+            <a class="contact-row wa" id="wa-link" href="#" target="_blank" rel="noopener" hidden><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.04 21.8h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.72.98 1-3.63-.24-.37a9.8 9.8 0 0 1-1.5-5.2c0-5.42 4.41-9.83 9.84-9.83a9.77 9.77 0 0 1 9.82 9.84c0 5.42-4.41 9.83-9.83 9.83zm8.37-18.2A11.76 11.76 0 0 0 12.04.13C5.5.13.2 5.43.2 11.97c0 2.09.55 4.13 1.59 5.93L.1 24l6.25-1.64a11.8 11.8 0 0 0 5.68 1.45h.01c6.53 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.14-3.47-8.37z"/></svg></span><span id="wa-text"></span></a>
+          </div>
+          <div class="socials light" id="socials-2"></div>
+        </div>
+        <form class="card form" id="contact-form" novalidate>
+          <h3>Send a message</h3>
+          <label>Name<input name="name" autocomplete="name" required maxlength="120" /></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required maxlength="200" /></label>
+          <label>Subject <span class="opt">(optional)</span><input name="subject" maxlength="160" /></label>
+          <label>Message<textarea name="message" rows="5" required maxlength="4000"></textarea></label>
+          <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
+          <button class="btn btn-accent full" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-in">
+      <p>© <span id="year"></span> Tajul Islam Redwan · Sylhet, Bangladesh</p>
+      <p class="muted">Content sourced from my LinkedIn profile.</p>
+    </div>
+  </footer>
+
+  <!-- Personal AI chat -->
+  <button class="chat-fab" id="chat-fab" type="button" aria-label="Ask my AI" aria-controls="chat-panel" aria-expanded="false"><span class="spark" aria-hidden="true">✦</span><span class="fab-long">Ask my AI</span><span class="fab-short" aria-hidden="true">AI</span></button>
+  <section class="chat-panel" id="chat-panel" role="dialog" aria-modal="false" aria-labelledby="chat-title" hidden>
+    <header class="chat-head">
+      <div class="chat-av" aria-hidden="true">✦</div>
+      <div><h2 id="chat-title">Tajul's AI</h2><p>Ask about me, or any study question · <span lang="bn">বাংলা বা English</span></p></div>
+      <button class="chat-x" id="chat-close" type="button" aria-label="Close chat">✕</button>
+    </header>
+    <div class="chat-log" id="chat-log" aria-live="polite">
+      <div class="msg bot"><div class="bubble">Hi! I'm Tajul's personal AI. Ask me anything about Tajul — his studies, projects, skills or how to contact him — or ask me any educational question.<br><span lang="bn">আমাকে বাংলাতেও প্রশ্ন করতে পারেন।</span></div></div>
+      <div class="chat-sugg" id="chat-sugg">
+        <button type="button" lang="bn">তাজুল কে?</button>
+        <button type="button">What projects has Tajul built?</button>
+        <button type="button" lang="bn">নিউটনের তৃতীয় সূত্র উদাহরণসহ বুঝাও</button>
+        <button type="button">How does a 4-stroke engine work?</button>
+      </div>
+    </div>
+    <form class="chat-form" id="chat-form">
+      <textarea id="chat-input" rows="1" maxlength="1200" placeholder="Type your question… / প্রশ্ন লিখুন…" aria-label="Your question" required></textarea>
+      <button type="submit" id="chat-send" aria-label="Send">➤</button>
+    </form>
+    <p class="chat-note">AI can make mistakes — please double-check important answers.</p>
+  </section>
+
+  <script src="/app.js" defer></script>
+  <script src="/chat.js" defer></script>
+</body>
+</html>
