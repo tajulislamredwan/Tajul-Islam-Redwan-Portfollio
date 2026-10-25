@@ -93,13 +93,20 @@
       ${e.period ? `<span class="when">${esc(e.period)}</span>` : ""}${e.note ? `<p class="note">${esc(e.note)}</p>` : ""}</div>`).join("");
 
     const cats = ["All", ...new Set(certs.map((x) => x.category).filter(Boolean))];
+    const certCard = (x) => {
+      const img = safeUrl(x.image);
+      const logo = safeUrl(x.logo) ? `<img class="iss-logo" src="${esc(x.logo)}" alt="" width="${img ? 22 : 40}" height="${img ? 22 : 40}">` : "";
+      const meta = `${x.note ? `<div class="meta">${esc(x.note)}</div>` : ""}${x.date ? `<div class="meta">Issued ${esc(x.date)}</div>` : ""}${x.credentialId ? `<div class="meta">${img ? "ID" : "Credential ID"} <code>${esc(x.credentialId)}</code></div>` : ""}${ext(x.link, x.linkLabel || "View")}`;
+      if (img) return `<div class="card cert cert-img"><a class="c-img" href="${esc(x.image)}" target="_blank" rel="noopener" aria-label="View certificate image"><img src="${esc(x.image)}" alt="${esc(x.title)} certificate" loading="lazy"></a>
+        <span class="cat">${esc(x.category)}</span><h4>${esc(x.title)}</h4><div class="issuer">${logo}${esc(x.issuer)}</div>${meta}</div>`;
+      return `<div class="card cert cert-row">${logo ? `<div class="cr-logo">${logo}</div>` : `<div class="cr-logo cr-ph">${esc((x.issuer || "?").charAt(0))}</div>`}
+        <div class="cr-body"><span class="cat">${esc(x.category)}</span><h4>${esc(x.title)}</h4><div class="issuer">${esc(x.issuer)}</div>${meta}</div></div>`;
+    };
     const drawCerts = (cat) => {
-      $("#cert-list").innerHTML = certs.filter((x) => cat === "All" || x.category === cat).map((x) => `
-        <div class="card cert">${safeUrl(x.image) ? `<a class="c-img" href="${esc(x.image)}" target="_blank" rel="noopener" aria-label="View certificate image"><img src="${esc(x.image)}" alt="${esc(x.title)} certificate" loading="lazy"></a>` : ""}
-        <span class="cat">${esc(x.category)}</span><h4>${esc(x.title)}</h4>
-        <div class="issuer">${safeUrl(x.logo) ? `<img class="iss-logo" src="${esc(x.logo)}" alt="" width="22" height="22">` : ""}${esc(x.issuer)}</div>${x.note ? `<div class="meta">${esc(x.note)}</div>` : ""}<div class="meta">${x.date ? "Issued " + esc(x.date) : ""}</div>
-        ${x.credentialId ? `<div class="meta">Credential ID <code>${esc(x.credentialId)}</code></div>` : ""}
-        ${ext(x.link, x.linkLabel || "View")}</div>`).join("");
+      const list = certs.filter((x) => cat === "All" || x.category === cat);
+      const withImg = list.filter((x) => safeUrl(x.image)), rest = list.filter((x) => !safeUrl(x.image));
+      $("#cert-list").innerHTML = (withImg.length ? `<div class="cert-feature">${withImg.map(certCard).join("")}</div>` : "")
+        + (rest.length ? `<div class="cert-compact">${rest.map(certCard).join("")}</div>` : "");
       document.querySelectorAll("#cert-filters button").forEach((b) => b.setAttribute("aria-selected", b.dataset.cat === cat));
     };
     $("#cert-filters").innerHTML = cats.map((k) => `<button role="tab" data-cat="${esc(k)}">${esc(k)}</button>`).join("");
