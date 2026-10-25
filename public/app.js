@@ -97,7 +97,8 @@
       const img = safeUrl(x.image);
       const logo = safeUrl(x.logo) ? `<img class="iss-logo" src="${esc(x.logo)}" alt="" width="${img ? 22 : 40}" height="${img ? 22 : 40}">` : "";
       const meta = `${x.note ? `<div class="meta">${esc(x.note)}</div>` : ""}${x.date ? `<div class="meta">Issued ${esc(x.date)}</div>` : ""}${x.credentialId ? `<div class="meta">${img ? "ID" : "Credential ID"} <code>${esc(x.credentialId)}</code></div>` : ""}${ext(x.link, x.linkLabel || "View")}`;
-      if (img) return `<div class="card cert cert-img"><a class="c-img" href="${esc(x.image)}" target="_blank" rel="noopener" aria-label="View certificate image"><img src="${esc(x.image)}" alt="${esc(x.title)} certificate" loading="lazy"></a>
+      const full = (Array.isArray(x.images) && x.images.length ? x.images : [x.image]).filter(safeUrl);
+      if (img) return `<div class="card cert cert-img"><a class="c-img" href="${esc(full[0] || x.image)}" target="_blank" rel="noopener" data-full="${esc(full.join("|"))}" data-title="${esc(x.title)}" aria-label="View full certificate: ${esc(x.title)}"><img src="${esc(x.image)}" alt="${esc(x.title)} certificate" loading="lazy">${full.length > 1 ? `<span class="c-count">${full.length} pages</span>` : ""}<span class="c-zoom" aria-hidden="true">View full</span></a>
         <span class="cat">${esc(x.category)}</span><h4>${esc(x.title)}</h4><div class="issuer">${logo}${esc(x.issuer)}</div>${meta}</div>`;
       return `<div class="card cert cert-row">${logo ? `<div class="cr-logo">${logo}</div>` : `<div class="cr-logo cr-ph">${esc((x.issuer || "?").charAt(0))}</div>`}
         <div class="cr-body"><span class="cat">${esc(x.category)}</span><h4>${esc(x.title)}</h4><div class="issuer">${esc(x.issuer)}</div>${meta}</div></div>`;
@@ -112,6 +113,10 @@
     $("#cert-filters").innerHTML = cats.map((k) => `<button role="tab" data-cat="${esc(k)}">${esc(k)}</button>`).join("");
     $("#cert-filters").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) drawCerts(b.dataset.cat); });
     drawCerts("All");
+    $("#cert-list").addEventListener("click", (e) => {
+      const a = e.target.closest("a.c-img[data-full]"); if (!a) return;
+      e.preventDefault(); openLightbox(a.dataset.full.split("|"), a.dataset.title || "", a);
+    });
     const honors = visible(c.honors), hw = $("#honors-wrap");
     if (hw) { hw.hidden = !honors.length; $("#honor-list").innerHTML = honors.map((h) => `
       <li class="honor reveal">${safeUrl(h.logo) ? `<img src="${esc(h.logo)}" alt="" width="36" height="36">` : ""}
@@ -198,3 +203,29 @@
   loadContent().then(render).catch(() => { $("#about-text").innerHTML = "<p>Content could not be loaded. Please refresh.</p>"; });
   try { if (!sessionStorage.getItem("v")) { sessionStorage.setItem("v", "1"); navigator.sendBeacon ? navigator.sendBeacon("/api/view", "{}") : fetch("/api/view", { method: "POST" }); } } catch {}
 })();
+
+/* Certificate lightbox: full image on tap, with pages, keyboard and swipe support */
+function openLightbox(srcs, title, opener) {
+  let i = 0;
+  const box = document.createElement("div");
+  box.className = "lightbox"; box.setAttribute("role", "dialog"); box.setAttribute("aria-modal", "true"); box.setAttribute("aria-label", title);
+  box.innerHTML = `<div class="lb-top"><span class="lb-title"></span><span class="lb-actions"><a class="lb-open" target="_blank" rel="noopener">Open image</a><button type="button" class="lb-close" aria-label="Close">&times;</button></span></div>
+    <div class="lb-stage"><button type="button" class="lb-nav lb-prev" aria-label="Previous page">&#8249;</button><img alt=""><button type="button" class="lb-nav lb-next" aria-label="Next page">&#8250;</button></div>`;
+  const img = box.querySelector("img"), t = box.querySelector(".lb-title"), op = box.querySelector(".lb-open");
+  const multi = srcs.length > 1;
+  box.querySelectorAll(".lb-nav").forEach((b) => (b.hidden = !multi));
+  const show = () => { img.src = srcs[i]; img.alt = `${title} — page ${i + 1}`; op.href = srcs[i]; t.textContent = multi ? `${title} (${i + 1}/${srcs.length})` : title; };
+  const go = (d) => { if (multi) { i = (i + d + srcs.length) % srcs.length; show(); } };
+  const close = () => { box.remove(); document.removeEventListener("keydown", key); document.documentElement.style.overflow = ""; opener && opener.focus(); };
+  const key = (e) => { if (e.key === "Escape") close(); else if (e.key === "ArrowRight") go(1); else if (e.key === "ArrowLeft") go(-1); };
+  box.addEventListener("click", (e) => { if (e.target === box || e.target.classList.contains("lb-stage")) close(); });
+  box.querySelector(".lb-close").addEventListener("click", close);
+  box.querySelector(".lb-prev").addEventListener("click", () => go(-1));
+  box.querySelector(".lb-next").addEventListener("click", () => go(1));
+  let sx = null;
+  box.addEventListener("touchstart", (e) => { sx = e.touches[0].clientX; }, { passive: true });
+  box.addEventListener("touchend", (e) => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1); sx = null; });
+  document.addEventListener("keydown", key);
+  document.documentElement.style.overflow = "hidden";
+  document.body.appendChild(box); show(); box.querySelector(".lb-close").focus();
+}

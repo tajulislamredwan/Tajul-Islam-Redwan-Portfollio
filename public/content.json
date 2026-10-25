@@ -226,7 +226,10 @@
       "linkLabel": "LinkedIn post",
       "note": "BNQF National Skill Certificate · valid until Apr 2031",
       "image": "/assets/cert-nsda-sales.webp",
-      "logo": "/assets/logo-nsda.webp"
+      "logo": "/assets/logo-nsda.webp",
+      "images": [
+        "/assets/cert-nsda-sales.webp"
+      ]
     },
     {
       "title": "Smart Interview Technique",
@@ -237,7 +240,10 @@
       "link": "https://www.linkedin.com/posts/tajulislamredwan_i-am-thrilled-to-share-that-i-have-successfully-activity-7454112494446620672-a5Vn",
       "linkLabel": "LinkedIn post",
       "image": "/assets/cert-smart-interview.webp",
-      "logo": "/assets/logo-shomvob.webp"
+      "logo": "/assets/logo-shomvob.webp",
+      "images": [
+        "/assets/cert-smart-interview.webp"
+      ]
     },
     {
       "title": "How to Write The Best CV",
@@ -258,7 +264,10 @@
       "link": "https://certificate.muktopaath.gov.bd/storage/uploads/certificates/387cb248adcd4d578f8682a94e82b1e8.jpg",
       "linkLabel": "See credential",
       "image": "/assets/cert-industrial-robotics.webp",
-      "logo": "/assets/logo-muktopaath.webp"
+      "logo": "/assets/logo-muktopaath.webp",
+      "images": [
+        "/assets/cert-industrial-robotics.webp"
+      ]
     },
     {
       "title": "Robotic Engineering (Batch-1)",
@@ -269,7 +278,10 @@
       "link": "https://certificate.muktopaath.gov.bd/storage/uploads/certificates/68a588334a0e34b2c6b764b32d4b90f1.jpg",
       "linkLabel": "See credential",
       "image": "/assets/cert-robotic-engineering.webp",
-      "logo": "/assets/logo-muktopaath.webp"
+      "logo": "/assets/logo-muktopaath.webp",
+      "images": [
+        "/assets/cert-robotic-engineering.webp"
+      ]
     },
     {
       "title": "Career With AI",
@@ -279,7 +291,12 @@
       "credentialId": "d346dad17535",
       "link": "https://www.grameenphone.academy/cert/d346dad17535",
       "linkLabel": "See credential",
-      "logo": "/assets/logo-gp.webp"
+      "logo": "/assets/logo-gp.webp",
+      "image": "/assets/cert-career-with-ai-thumb.webp",
+      "images": [
+        "/assets/cert-career-with-ai.webp"
+      ],
+      "note": "Certificate of Excellence · with LEAD Academy"
     },
     {
       "title": "Climate Change International Legal Regime — The Climate Change Convention, The Kyoto Protocol, The Paris Agreement",
@@ -299,7 +316,11 @@
       "credentialId": "",
       "link": "",
       "linkLabel": "",
-      "logo": "/assets/logo-uncclearn.webp"
+      "logo": "/assets/logo-uncclearn.webp",
+      "image": "/assets/cert-unfccc-participant-guide-thumb.webp",
+      "images": [
+        "/assets/cert-unfccc-participant-guide.webp"
+      ]
     },
     {
       "title": "Introduction to Sustainable Finance",
@@ -309,7 +330,12 @@
       "credentialId": "",
       "link": "",
       "linkLabel": "",
-      "logo": "/assets/logo-uncclearn.webp"
+      "logo": "/assets/logo-uncclearn.webp",
+      "image": "/assets/cert-sustainable-finance-thumb.webp",
+      "images": [
+        "/assets/cert-sustainable-finance.webp"
+      ],
+      "note": "Course by GIZ, SEB and PAGE (Partnership for Action on Green Economy)"
     },
     {
       "title": "The National Implementation of the Paris Agreement",
@@ -319,7 +345,25 @@
       "credentialId": "",
       "link": "",
       "linkLabel": "",
-      "logo": "/assets/logo-uncclearn.webp"
+      "logo": "/assets/logo-uncclearn.webp",
+      "image": "/assets/cert-paris-national-implementation-thumb.webp",
+      "images": [
+        "/assets/cert-paris-national-implementation.webp"
+      ]
+    },
+    {
+      "title": "Introduction to Sustainable Development in Practice",
+      "issuer": "UNITAR (United Nations Institute for Training and Research)",
+      "date": "Mar 2025",
+      "category": "Climate & Sustainability",
+      "credentialId": "",
+      "link": "",
+      "linkLabel": "",
+      "note": "E-learning course · with UNDP and UNEP (Poverty-Environment Action)",
+      "image": "/assets/cert-sustainable-development-thumb.webp",
+      "images": [
+        "/assets/cert-sustainable-development.webp"
+      ]
     },
     {
       "title": "Gender Equality and Human Rights in Climate Action and Renewable Energy (Modules 1–3)",
@@ -329,27 +373,42 @@
       "credentialId": "",
       "link": "",
       "linkLabel": "",
-      "logo": "/assets/logo-uncclearn.webp"
+      "logo": "/assets/logo-uncclearn.webp",
+      "image": "/assets/cert-gender-equality-thumb.webp",
+      "images": [
+        "/assets/cert-gender-equality.webp",
+        "/assets/cert-gender-equality-p2.webp"
+      ],
+      "note": "E-course · 4 hours · UNITAR, UNEP, UN Women and EmPower"
     },
     {
-      "title": "JOTA-JOTI — Certificate of Participation",
+      "title": "JOTA-JOTI 2025 — Certificate of Participation",
       "issuer": "World Organization of the Scout Movement (WOSM)",
       "date": "Oct 2025",
       "category": "Scouting",
       "credentialId": "",
       "link": "",
       "linkLabel": "",
-      "logo": "/assets/logo-wosm.webp"
+      "logo": "/assets/logo-wosm.webp",
+      "image": "/assets/cert-jota-joti-2025-thumb.webp",
+      "images": [
+        "/assets/cert-jota-joti-2025.webp"
+      ],
+      "note": "Jamboree On The Air / On The Internet · 8 challenge badges · JID 3BD36V"
     },
     {
       "title": "SfH 3: Being Safe Online",
       "issuer": "World Organization of the Scout Movement (WOSM)",
       "date": "Oct 2025",
       "category": "Scouting",
-      "credentialId": "",
+      "credentialId": "242066-104362215-5837310",
       "link": "",
       "linkLabel": "",
-      "logo": "/assets/logo-wosm.webp"
+      "logo": "/assets/logo-wosm.webp",
+      "image": "/assets/cert-sfh3-safe-online-thumb.webp",
+      "images": [
+        "/assets/cert-sfh3-safe-online.webp"
+      ]
     }
   ],
   "robotics": {
