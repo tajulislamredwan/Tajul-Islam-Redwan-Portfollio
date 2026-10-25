@@ -291,3 +291,25 @@ body.chat-open .chat-fab { display: none; }
   .chat-fab .fab-long { display: none; }
   .chat-fab .fab-short { display: inline; }
 }
+
+/* LinkedIn sync update: status, images, logos, honors */
+[hidden] { display: none !important; }
+.venture .v-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.venture .tag.status { color: #475569; background: #e2e8f0; }
+.venture .v-img { width: calc(100% + 2 * var(--card-pad, 26px)); max-width: none; margin: calc(-1 * var(--card-pad, 26px)) calc(-1 * var(--card-pad, 26px)) 4px; height: 230px; object-fit: contain; background: #1f2a37; display: block; }
+.timeline .pill.status { background: #e2e8f0; color: #475569; }
+.timeline li.ended::before { border-color: #94a3b8; }
+.timeline .org { display: flex; align-items: center; gap: 8px; }
+.org-logo, .iss-logo { width: 22px; height: 22px; border-radius: 6px; object-fit: contain; background: #fff; border: 1px solid var(--line); flex: none; }
+.cert .issuer { display: flex; align-items: center; gap: 8px; }
+.cert .c-img { display: block; margin: -20px -20px 8px; padding: 0; border-bottom: 1px solid var(--line); background: #f8fafc; border-radius: inherit; border-bottom-left-radius: 0; border-bottom-right-radius: 0; overflow: hidden; }
+.cert .c-img img { display: block; width: 100%; height: 170px; object-fit: cover; object-position: top; transition: transform .3s; }
+.cert .c-img:hover img { transform: scale(1.03); }
+.honors-wrap { margin-top: 34px; }
+.honors-wrap h3 { margin: 0 0 14px; font-size: 1.35rem; }
+.honor-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.honor { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.honor img { flex: none; border-radius: 8px; border: 1px solid var(--line); object-fit: contain; }
+.honor strong { display: block; font-size: .95rem; color: var(--ink); line-height: 1.3; }
+.honor span { display: block; font-size: .85rem; color: var(--muted); margin-top: 2px; }
+.honor em { display: block; font-size: .82rem; color: #64748b; margin-top: 2px; font-style: normal; }

@@ -60,7 +60,7 @@
     const facts = [
       ["Studying", edu0 ? `${edu0.title}${edu0.org ? " · " + edu0.org : ""}` : ""],
       ["Based in", p.location],
-      ["Currently", [...main.map((v) => `${v.role}, ${v.name}`), ...curExp.map((e) => `${String(e.role).replace(/\s*\(.*?\)/, "")}, ${e.org}`)].join(" · ")],
+      ["Currently", [...main.filter((v) => /present/i.test(v.period || "")).map((v) => `${v.role}, ${v.name}`), ...curExp.map((e) => `${String(e.role).replace(/\s*\(.*?\)/, "")}, ${e.org}`)].join(" · ")],
       ["Languages", visible(c.languages).map((l) => l.name).join(", ")],
       ["Email", p.email],
       ["WhatsApp", p.whatsappDisplay || p.whatsapp],
@@ -68,8 +68,9 @@
     $("#facts").innerHTML = facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("");
 
     $("#ventures-list").innerHTML = vent.map((v) => `
-      <article class="card venture reveal${v.minor ? " minor" : ""}">
-        <span class="tag">${esc(v.type)}</span>
+      <article class="card venture reveal${v.minor ? " minor" : ""}${v.status ? " closed" : ""}">
+        ${safeUrl(v.image) ? `<img class="v-img" src="${esc(v.image)}" alt="${esc(v.name)}" loading="lazy">` : ""}
+        <div class="v-tags"><span class="tag">${esc(v.type)}</span>${v.status ? `<span class="tag status">${esc(v.status)}</span>` : ""}</div>
         <h3>${esc(v.name)}${v.nameBn ? ` <span class="bn muted" lang="bn" style="font-size:.8em">${esc(v.nameBn)}</span>` : ""}</h3>
         <div class="meta">${esc([v.role, v.period].filter(Boolean).join(" · "))}</div>
         ${v.tagline ? `<div class="tagline">“${esc(v.tagline)}”</div>` : ""}
@@ -79,8 +80,8 @@
       </article>`).join("");
 
     $("#experience-list").innerHTML = visible(c.experience).map((e) => `
-      <li class="reveal"><div class="role">${esc(e.role)}${e.type ? `<span class="pill">${esc(e.type)}</span>` : ""}</div>
-      <div class="org">${esc(e.org)}</div><div class="when">${esc(e.period)}</div>
+      <li class="reveal${e.status ? " ended" : ""}"><div class="role">${esc(e.role)}${e.type ? `<span class="pill">${esc(e.type)}</span>` : ""}${e.status ? `<span class="pill status">${esc(e.status)}</span>` : ""}</div>
+      <div class="org">${safeUrl(e.logo) ? `<img class="org-logo" src="${esc(e.logo)}" alt="" width="22" height="22">` : ""}${esc(e.org)}</div><div class="when">${esc(e.period)}</div>
       ${e.description ? `<p>${esc(e.description)}</p>` : ""}</li>`).join("");
 
     $("#volunteer-list").innerHTML = vols.map((v) => `
@@ -94,8 +95,9 @@
     const cats = ["All", ...new Set(certs.map((x) => x.category).filter(Boolean))];
     const drawCerts = (cat) => {
       $("#cert-list").innerHTML = certs.filter((x) => cat === "All" || x.category === cat).map((x) => `
-        <div class="card cert"><span class="cat">${esc(x.category)}</span><h4>${esc(x.title)}</h4>
-        <div class="issuer">${esc(x.issuer)}</div><div class="meta">${x.date ? "Issued " + esc(x.date) : ""}</div>
+        <div class="card cert">${safeUrl(x.image) ? `<a class="c-img" href="${esc(x.image)}" target="_blank" rel="noopener" aria-label="View certificate image"><img src="${esc(x.image)}" alt="${esc(x.title)} certificate" loading="lazy"></a>` : ""}
+        <span class="cat">${esc(x.category)}</span><h4>${esc(x.title)}</h4>
+        <div class="issuer">${safeUrl(x.logo) ? `<img class="iss-logo" src="${esc(x.logo)}" alt="" width="22" height="22">` : ""}${esc(x.issuer)}</div>${x.note ? `<div class="meta">${esc(x.note)}</div>` : ""}<div class="meta">${x.date ? "Issued " + esc(x.date) : ""}</div>
         ${x.credentialId ? `<div class="meta">Credential ID <code>${esc(x.credentialId)}</code></div>` : ""}
         ${ext(x.link, x.linkLabel || "View")}</div>`).join("");
       document.querySelectorAll("#cert-filters button").forEach((b) => b.setAttribute("aria-selected", b.dataset.cat === cat));
@@ -103,6 +105,10 @@
     $("#cert-filters").innerHTML = cats.map((k) => `<button role="tab" data-cat="${esc(k)}">${esc(k)}</button>`).join("");
     $("#cert-filters").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) drawCerts(b.dataset.cat); });
     drawCerts("All");
+    const honors = visible(c.honors), hw = $("#honors-wrap");
+    if (hw) { hw.hidden = !honors.length; $("#honor-list").innerHTML = honors.map((h) => `
+      <li class="honor reveal">${safeUrl(h.logo) ? `<img src="${esc(h.logo)}" alt="" width="36" height="36">` : ""}
+      <div><strong>${esc(h.title)}</strong><span>${esc([h.issuer, h.date].filter(Boolean).join(" · "))}</span>${h.note ? `<em>${esc(h.note)}</em>` : ""}</div></li>`).join(""); }
 
     $("#skills-list").innerHTML = visible(c.skills).map((g) => `
       <div class="skill-group"><h4>${esc(g.group)}</h4><div class="tags">${(g.items || []).map((i) => `<span>${esc(i)}</span>`).join("")}</div></div>`).join("");

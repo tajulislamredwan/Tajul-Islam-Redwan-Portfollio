@@ -25,7 +25,7 @@
   },
   "about": [
     "I am a passionate and future-focused Mechanical Engineering student, currently developing my expertise in modern engineering tools, AI-driven solutions and sustainable technology.",
-    "Alongside my studies I run small ventures — Adhunik Path, an online book shop that started in February 2025 as LEXO BookShop, and Adhunik Style, a fashion brand — and I promote products as a Rokomari.com affiliate. This work has given me hands-on experience in sales, branding, digital marketing and customer service.",
+    "Alongside my studies I ran small ventures — Adhunik Path, an online book shop that started in February 2025 as LEXO BookShop, and Adhunik Style, a fashion brand — and worked part-time as a computer specialist at New Xpressway. All three ended in May 2026. I still promote products as a Rokomari.com affiliate. This work has given me hands-on experience in sales, branding, digital marketing and customer service.",
     "I enjoy solving real-world problems with technology, creativity and structured thinking, and I use AI tools such as ChatGPT, Gemini, Grok, Copilot, Claude and Lovable in my work. My goal is a career that combines engineering, innovation and entrepreneurship.",
     "I am currently exploring Mechanical Engineering, Product Development, AI Productivity & Automation, Sustainability & Green Technology, and Business Strategy & Branding — and I am open to internships, global opportunities and collaborations."
   ],
@@ -35,9 +35,9 @@
       "nameBn": "আধুনিক পাঠ",
       "type": "Online book shop",
       "role": "Founder",
-      "period": "Feb 2025 – Present",
+      "period": "Feb 2025 – May 2026",
       "tagline": "Your Knowledge, Your Identity",
-      "description": "Started in February 2025 as LEXO BookShop. In its first 4 months it served 50+ happy customers and earned 30+ positive reviews. After the original page was hacked, the shop returned as Adhunik Path with a new name, a new logo and full cash on delivery, plus home delivery and conditional free delivery.",
+      "description": "Started in February 2025 as LEXO BookShop. In its first 4 months it served 50+ happy customers and earned 30+ positive reviews. After the original page was hacked, the shop returned as Adhunik Path with a new name, a new logo and full cash on delivery, plus home delivery and conditional free delivery. The shop closed in May 2026.",
       "highlights": [
         "50+ customers in the first 4 months",
         "30+ positive reviews",
@@ -45,19 +45,22 @@
       ],
       "link": "https://www.linkedin.com/posts/tajulislamredwan_%E0%A6%86%E0%A6%A7%E0%A6%A8%E0%A6%95-%E0%A6%AA%E0%A6%A0-adhunik-path-%E0%A6%8F%E0%A6%B0-%E0%A6%AF%E0%A6%A4%E0%A6%B0-%E0%A6%B6%E0%A6%B0-activity-7447877544005042176-w7si",
       "linkLabel": "Read the story on LinkedIn",
-      "minor": false
+      "minor": false,
+      "status": "Closed · May 2026",
+      "image": "/assets/venture-adhunik-path.webp"
     },
     {
       "name": "Adhunik Style",
       "type": "Fashion brand",
       "role": "Owner",
-      "period": "Feb 2026 – Present",
+      "period": "Feb 2026 – May 2026",
       "tagline": "Your Style, Your Identity — Redefine yourself with Adhunik Style",
-      "description": "A fashion brand. Its first website has since been closed by Adhunik Style.",
+      "description": "A fashion brand, closed in May 2026. Its first website had already been closed by Adhunik Style.",
       "highlights": [],
       "link": "",
       "linkLabel": "",
-      "minor": true
+      "minor": true,
+      "status": "Closed · May 2026"
     },
     {
       "name": "Adhunik AI",
@@ -71,36 +74,53 @@
       "link": "",
       "linkLabel": "",
       "minor": true
+    },
+    {
+      "name": "Personal portfolio",
+      "nameBn": "",
+      "type": "Project · Feb 2026",
+      "role": "Creator",
+      "period": "Feb 2026",
+      "tagline": "",
+      "description": "\"Tajul Islam Redwan Portfolio\" — a personal portfolio project listed on my LinkedIn profile. This website is its newer version.",
+      "highlights": [],
+      "link": "",
+      "linkLabel": "",
+      "minor": true
     }
   ],
   "experience": [
-    {
-      "role": "Computer Specialist (Part-time)",
-      "org": "New Xpressway",
-      "period": "Nov 2025 – Present",
-      "type": "Part-time",
-      "description": "Office and design work using Microsoft Office and Adobe Photoshop & Illustrator, plus printing, laminating and day-to-day management."
-    },
-    {
-      "role": "Founder",
-      "org": "Adhunik Path (formerly LEXO BookShop)",
-      "period": "Feb 2025 – Present",
-      "type": "Self-employed",
-      "description": "Online book shop."
-    },
     {
       "role": "Affiliate Marketer",
       "org": "Rokomari.com",
       "period": "2025 – Present",
       "type": "Affiliate",
-      "description": "Promoting products through digital channels and supporting online sales."
+      "description": "Promoting products through digital channels and supporting online sales.",
+      "logo": "/assets/logo-rokomari.webp"
+    },
+    {
+      "role": "Computer Specialist (Part-time)",
+      "org": "New Xpressway",
+      "period": "Nov 2025 – May 2026",
+      "type": "Part-time",
+      "description": "Office and design work using Microsoft Office and Adobe Photoshop & Illustrator, plus printing, laminating and day-to-day management.",
+      "status": "Ended May 2026"
+    },
+    {
+      "role": "Founder",
+      "org": "Adhunik Path (formerly LEXO BookShop)",
+      "period": "Feb 2025 – May 2026",
+      "type": "Self-employed",
+      "description": "Online book shop (closed in May 2026).",
+      "status": "Closed May 2026"
     },
     {
       "role": "Owner",
       "org": "Adhunik Style",
-      "period": "Feb 2026 – Present",
+      "period": "Feb 2026 – May 2026",
       "type": "Self-employed",
-      "description": "Running a fashion brand."
+      "description": "Ran a fashion brand (closed in May 2026).",
+      "status": "Closed May 2026"
     }
   ],
   "volunteering": [
@@ -109,14 +129,14 @@
       "org": "Bangladesh 64 District Blood Foundation",
       "period": "Jun 2026 – Present",
       "cause": "Health",
-      "logo": ""
+      "logo": "/assets/logo-org-64-blood.webp"
     },
     {
       "role": "Futurenation Volunteer (FNV)",
       "org": "Futurenation",
       "period": "Apr 2026 – Present",
       "cause": "Education",
-      "logo": ""
+      "logo": "/assets/logo-org-futurenation.webp"
     },
     {
       "role": "Campus Ambassador",
@@ -179,13 +199,13 @@
     {
       "title": "Diploma in Engineering — Mechanical Engineering",
       "org": "Sylhet Government Polytechnic Institute, Sylhet",
-      "period": "2024 – Present",
+      "period": "2024 – 2028 (expected)",
       "note": "Focused on sustainable technology and product innovation."
     },
     {
       "title": "SSC / Dakhil",
       "org": "Kaskanakpur Gazir Mukam Dakhil Madrasah (KGMDM)",
-      "period": "Completed 2024",
+      "period": "2016 – 2024",
       "note": ""
     },
     {
@@ -197,31 +217,37 @@
   ],
   "certifications": [
     {
-      "title": "Certified Sales Professional, Level 3",
+      "title": "Certified Sales Professional, Level 3 (360 hours)",
       "issuer": "National Skills Development Authority (NSDA)",
-      "date": "2026",
+      "date": "Apr 2026",
       "category": "Professional",
-      "credentialId": "",
+      "credentialId": "NSC-AF-SP-L3-001837",
       "link": "https://www.linkedin.com/posts/tajulislamredwan_im-happy-to-share-that-ive-obtained-a-new-activity-7510951944442593280-b1Mg",
-      "linkLabel": "LinkedIn post"
+      "linkLabel": "LinkedIn post",
+      "note": "National Skill Certificate under the Bangladesh National Qualifications Framework (BNQF) · valid until Apr 2031",
+      "image": "/assets/cert-nsda-sales.webp",
+      "logo": "/assets/logo-nsda.webp"
     },
     {
       "title": "Smart Interview Technique",
       "issuer": "Shomvob Academy",
-      "date": "2026",
+      "date": "Apr 2026",
       "category": "Professional",
       "credentialId": "",
       "link": "https://www.linkedin.com/posts/tajulislamredwan_i-am-thrilled-to-share-that-i-have-successfully-activity-7454112494446620672-a5Vn",
-      "linkLabel": "LinkedIn post"
+      "linkLabel": "LinkedIn post",
+      "image": "/assets/cert-smart-interview.webp",
+      "logo": "/assets/logo-shomvob.webp"
     },
     {
       "title": "How to Write The Best CV",
       "issuer": "Shomvob Academy",
-      "date": "2026",
+      "date": "Apr 2026",
       "category": "Professional",
       "credentialId": "",
       "link": "https://www.linkedin.com/posts/tajulislamredwan_cvwriting-careerdevelopment-activity-7454074440700694528-LBED",
-      "linkLabel": "LinkedIn post"
+      "linkLabel": "LinkedIn post",
+      "logo": "/assets/logo-shomvob.webp"
     },
     {
       "title": "Industrial Robotics (Batch-1)",
@@ -230,7 +256,9 @@
       "category": "Robotics & AI",
       "credentialId": "MC-H1K9170564M1870B",
       "link": "https://certificate.muktopaath.gov.bd/storage/uploads/certificates/387cb248adcd4d578f8682a94e82b1e8.jpg",
-      "linkLabel": "See credential"
+      "linkLabel": "See credential",
+      "image": "/assets/cert-industrial-robotics.webp",
+      "logo": "/assets/logo-muktopaath.webp"
     },
     {
       "title": "Robotic Engineering (Batch-1)",
@@ -239,7 +267,9 @@
       "category": "Robotics & AI",
       "credentialId": "MC-S1V9169417E1153I",
       "link": "https://certificate.muktopaath.gov.bd/storage/uploads/certificates/68a588334a0e34b2c6b764b32d4b90f1.jpg",
-      "linkLabel": "See credential"
+      "linkLabel": "See credential",
+      "image": "/assets/cert-robotic-engineering.webp",
+      "logo": "/assets/logo-muktopaath.webp"
     },
     {
       "title": "Career With AI",
@@ -248,7 +278,8 @@
       "category": "Robotics & AI",
       "credentialId": "d346dad17535",
       "link": "https://www.grameenphone.academy/cert/d346dad17535",
-      "linkLabel": "See credential"
+      "linkLabel": "See credential",
+      "logo": "/assets/logo-gp.webp"
     },
     {
       "title": "Climate Change International Legal Regime — The Climate Change Convention, The Kyoto Protocol, The Paris Agreement",
@@ -257,7 +288,8 @@
       "category": "Climate & Sustainability",
       "credentialId": "",
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "logo": "/assets/logo-unep.webp"
     },
     {
       "title": "A Participant's Guide to the UN Climate Change Process",
@@ -266,7 +298,8 @@
       "category": "Climate & Sustainability",
       "credentialId": "",
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "logo": "/assets/logo-uncclearn.webp"
     },
     {
       "title": "Introduction to Sustainable Finance",
@@ -275,7 +308,8 @@
       "category": "Climate & Sustainability",
       "credentialId": "",
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "logo": "/assets/logo-uncclearn.webp"
     },
     {
       "title": "The National Implementation of the Paris Agreement",
@@ -284,7 +318,8 @@
       "category": "Climate & Sustainability",
       "credentialId": "",
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "logo": "/assets/logo-uncclearn.webp"
     },
     {
       "title": "Gender Equality and Human Rights in Climate Action and Renewable Energy (Modules 1–3)",
@@ -293,7 +328,8 @@
       "category": "Climate & Sustainability",
       "credentialId": "",
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "logo": "/assets/logo-uncclearn.webp"
     },
     {
       "title": "JOTA-JOTI — Certificate of Participation",
@@ -302,7 +338,8 @@
       "category": "Scouting",
       "credentialId": "",
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "logo": "/assets/logo-wosm.webp"
     },
     {
       "title": "SfH 3: Being Safe Online",
@@ -311,7 +348,8 @@
       "category": "Scouting",
       "credentialId": "",
       "link": "",
-      "linkLabel": ""
+      "linkLabel": "",
+      "logo": "/assets/logo-wosm.webp"
     }
   ],
   "robotics": {
@@ -418,16 +456,30 @@
       {
         "no": "24",
         "title": "Fourier GR 2",
-        "date": "2026",
-        "image": "",
+        "date": "13 Mar 2026",
+        "image": "/assets/robot-fourier-gr2.webp",
         "link": "https://www.linkedin.com/posts/tajulislamredwan_robotics24-fouriergr2-activity-7438140914176491520-ABsE"
       },
       {
         "no": "25",
         "title": "HRP-4C (Miim)",
-        "date": "2026",
-        "image": "",
+        "date": "13 Mar 2026",
+        "image": "/assets/robot-hrp-4c.webp",
         "link": "https://www.linkedin.com/posts/tajulislamredwan_robotics25-hrp4c-activity-7438142012480180224-ay-r"
+      },
+      {
+        "no": "26",
+        "title": "Kime",
+        "date": "13 Mar 2026",
+        "image": "/assets/robot-kime-26.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_robotics26-kime-activity-7438143773311836160-AuPQ"
+      },
+      {
+        "no": "27",
+        "title": "LimX CL-1",
+        "date": "13 Mar 2026",
+        "image": "/assets/robot-limx-cl-1-27.webp",
+        "link": "https://www.linkedin.com/posts/tajulislamredwan_robotics27-limxcl1-activity-7438146388795834369-bQV7"
       }
     ]
   },
@@ -545,6 +597,50 @@
     {
       "name": "Turkish",
       "level": "Elementary"
+    }
+  ],
+  "honors": [
+    {
+      "title": "The Climate Change Convention",
+      "issuer": "UN CC:Learn",
+      "date": "Mar 2026",
+      "note": "Badge — course: Climate Change International Legal Regime",
+      "logo": "/assets/logo-uncclearn.webp"
+    },
+    {
+      "title": "The Kyoto Protocol",
+      "issuer": "UN CC:Learn",
+      "date": "Mar 2026",
+      "note": "Badge — course: Climate Change International Legal Regime",
+      "logo": "/assets/logo-uncclearn.webp"
+    },
+    {
+      "title": "The Paris Agreement",
+      "issuer": "UN CC:Learn",
+      "date": "Mar 2026",
+      "note": "Badge — course: Climate Change International Legal Regime",
+      "logo": "/assets/logo-uncclearn.webp"
+    },
+    {
+      "title": "Gender Equality and Human Rights in Climate Action and Renewable Energy — Module 1",
+      "issuer": "One UN Climate Change Learning Partnership",
+      "date": "Jan 2025",
+      "note": "Badge for passing the Module 1 quiz",
+      "logo": "/assets/logo-uncclearn.webp"
+    },
+    {
+      "title": "Gender Equality and Human Rights in Climate Action and Renewable Energy — Module 2",
+      "issuer": "One UN Climate Change Learning Partnership",
+      "date": "Jan 2025",
+      "note": "Badge for passing the Module 2 quiz",
+      "logo": "/assets/logo-uncclearn.webp"
+    },
+    {
+      "title": "Gender Equality and Human Rights in Climate Action and Renewable Energy — Module 3",
+      "issuer": "One UN Climate Change Learning Partnership",
+      "date": "Jan 2025",
+      "note": "",
+      "logo": "/assets/logo-uncclearn.webp"
     }
   ]
 }
