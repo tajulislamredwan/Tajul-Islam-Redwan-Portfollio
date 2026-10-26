@@ -8,16 +8,21 @@ Personal portfolio website of **Tajul Islam Redwan**, a Diploma in Mechanical En
 ## Features
 
 - Responsive single-page portfolio (about, experience, ventures, organizations, articles, certificates and robotics posts)
-- "Ask AI" chat assistant that answers questions about Tajul, powered by Cloudflare Workers AI
+- "Ask AI" chat assistant powered by Cloudflare Workers AI, with source links for online answers
 - Contact form with rate limiting
 - Password-protected admin panel (`/admin`) for editing site content without touching code
 - Content stored in a Cloudflare Durable Object (SQLite), with `public/content.json` as the default content
+
+## AI search and privacy
+
+For general questions, the chat sends the query to Bing search and the Wikipedia API, then shows source links with the answer. Questions about Tajul are answered only from the portfolio profile and the published CV summary; those questions are not sent to external search providers, and missing personal facts are not guessed.
 
 ## Tech stack
 
 - [Cloudflare Workers](https://developers.cloudflare.com/workers/) with static assets
 - Durable Objects (SQLite storage) for content, messages and admin sessions
 - Workers AI for the chat assistant
+- Bing RSS search and the MediaWiki API for general-question references
 - Plain HTML, CSS and JavaScript (no framework, no build step)
 
 ## Project structure
@@ -25,6 +30,9 @@ Personal portfolio website of **Tajul Islam Redwan**, a Diploma in Mechanical En
 ```
 public/          Static site (index.html, styles.css, app.js, chat.js, admin panel, assets)
 src/worker.js    Worker: API routes, admin auth, chat, contact form, Durable Object
+src/online-search.js  Bing/Wikipedia search, source extraction and personal-query guard
+src/cv-summary.json   Verified facts transcribed from the published CV PDF
+android/         Android WebView app source with a Home/Admin menu
 wrangler.jsonc   Cloudflare Worker configuration
 ```
 

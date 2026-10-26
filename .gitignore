@@ -4,5 +4,6 @@ node_modules/
 .env
 *.log
 *password*.txt
-
 /src/pending.json
+android/.gradle/
+android/**/build/
