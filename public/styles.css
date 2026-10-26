@@ -376,3 +376,14 @@ body.chat-open .chat-fab { display: none; }
 @media (max-width: 620px) { .cert-feature, .cert-feature:has(> :nth-child(2):last-child), .cert-feature:has(> :nth-child(3):last-child) { columns: 1; } }
 .lightbox { z-index: 10000; background: rgba(8, 12, 20, .97); }
 .lb-nav { background: rgba(15, 23, 42, .78); border: 1px solid rgba(255,255,255,.35); z-index: 2; }
+
+/* CV download */
+.btn-cv svg { flex: none; }
+.btn svg { flex: none; }
+.menu-cv { font-weight: 600; }
+.cv-box { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 18px 0 20px; padding: 14px 16px; border-radius: 14px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); color: #fff; max-width: 520px; }
+.cv-box strong { display: block; font-size: 1.05rem; }
+.cv-box span { color: rgba(255,255,255,.7); font-size: .88rem; }
+.cv-actions { display: flex; gap: 10px; }
+.cv-actions .btn { color: inherit; }
+.cv-actions .btn-accent { color: var(--accent-ink); }

@@ -8,3 +8,7 @@
   Cache-Control: no-store
 /assets/*
   Cache-Control: public, max-age=604800
+/Tajul-Islam-Redwan-CV.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=3600
+  X-Robots-Tag: noindex
