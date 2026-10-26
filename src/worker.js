@@ -81,7 +81,7 @@ function profileBrief(c) {
   const about = vis(c.about).map((x) => (typeof x === "string" ? x : "")).filter(Boolean);
   if (about.length) L.push(`About (his own words): ${about.join(" ")}`);
   const vent = vis(c.ventures);
-  if (vent.length) L.push("Ventures & projects:\n" + vent.map((v) => `- ${v.name}${v.nameBn ? ` (${v.nameBn})` : ""}: ${[v.type, v.role, v.period].filter(Boolean).join(", ")}${v.minor ? " [low-priority / did not work out as planned]" : ""}${v.status ? ` [${v.status}]` : ""}. ${v.tagline ? `Tagline: "${v.tagline}". ` : ""}${v.description || ""} ${vis(v.highlights).join("; ")}`.trim()).join("\n"));
+  if (vent.length) L.push("Ventures & projects:\n" + vent.map((v) => `- ${v.name}${v.nameBn ? ` (${v.nameBn})` : ""}: ${[v.type, v.role, v.period].filter(Boolean).join(", ")}${v.minor ? " [low-priority / did not work out as planned]" : ""}${v.status ? ` [${v.status}]` : ""}. ${v.tagline ? `Tagline: "${v.tagline}". ` : ""}${v.description || ""} ${vis(v.highlights).join("; ")}${v.link ? ` Link: ${v.link}` : ""}`.trim()).join("\n"));
   const exp = vis(c.experience);
   if (exp.length) L.push("Work experience:\n" + exp.map((e) => `- ${e.role} at ${e.org} (${[e.type, e.period, e.status].filter(Boolean).join(", ")}). ${e.description || ""}`.trim()).join("\n"));
   const edu = vis(c.education);

@@ -387,3 +387,4 @@ body.chat-open .chat-fab { display: none; }
 .cv-actions { display: flex; gap: 10px; }
 .cv-actions .btn { color: inherit; }
 .cv-actions .btn-accent { color: var(--accent-ink); }
+.venture .v-img[src*="friendstar"] { background: #f6f5fb; border-bottom: 1px solid #e7e4f5; }

@@ -31,6 +31,25 @@
   ],
   "ventures": [
     {
+      "name": "FriendStar",
+      "nameBn": "",
+      "type": "Messenger web app · Live",
+      "role": "Creator",
+      "period": "2026 – Present",
+      "tagline": "Chat with the people who make you shine.",
+      "description": "My own messenger app, live with a real backend, for calm and private one-to-one chats. Group chats, voice and video calls and status stories are listed as coming soon.",
+      "highlights": [
+        "Real-time chat with sent, delivered and read ticks",
+        "Photos and files up to 10 MB",
+        "You choose who sees your last seen and photo",
+        "Light and dark mode"
+      ],
+      "link": "https://chat.friendstar.workers.dev",
+      "linkLabel": "Open FriendStar",
+      "minor": false,
+      "image": "/assets/venture-friendstar.webp"
+    },
+    {
       "name": "Adhunik Path",
       "nameBn": "আধুনিক পাঠ",
       "type": "Online book shop",
