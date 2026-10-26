@@ -37,10 +37,11 @@
       "role": "Creator",
       "period": "2026 – Present",
       "tagline": "Chat with the people who make you shine.",
-      "description": "My own messenger app, live with a real backend, for calm and private one-to-one chats. Group chats, voice and video calls and status stories are listed as coming soon.",
+      "description": "My own messenger app, live with a real backend, for friends and groups: real-time chats, 24-hour status updates and one-to-one voice and video calls. Group calls are coming soon.",
       "highlights": [
         "Real-time chat with sent, delivered and read ticks",
-        "Photos and files up to 10 MB",
+        "Group chats, plus 24-hour status updates",
+        "One-to-one voice and video calls, straight between devices",
         "You choose who sees your last seen and photo",
         "Light and dark mode"
       ],
