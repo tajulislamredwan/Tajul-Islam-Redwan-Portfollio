@@ -12,6 +12,14 @@
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const hasBn = (s) => /[\u0980-\u09FF]/.test(s);
 
+  function renderSources(items) {
+    const safe = (Array.isArray(items) ? items : []).slice(0, 5).filter((item) => {
+      try { return new URL(item.url).protocol === "https:"; } catch (_) { return false; }
+    });
+    if (!safe.length) return "";
+    return `<div class="sources"><strong>Sources / উৎস:</strong><ul>${safe.map((item) => `<li><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.title || "Open source")}</a></li>`).join("")}</ul></div>`;
+  }
+
   // Minimal, safe Markdown: escape first, then bold/italic/code/links/lists/headings.
   function md(text) {
     const inline = (t) => esc(t)
@@ -55,7 +63,7 @@
   }
 
   function restore() {
-    for (const m of history) add(m.role === "user" ? "user" : "bot", m.role === "user" ? esc(m.content).replace(/\n/g, "<br>") : md(m.content));
+    for (const m of history) add(m.role === "user" ? "user" : "bot", m.role === "user" ? esc(m.content).replace(/\n/g, "<br>") : md(m.content) + renderSources(m.sources));
     if (history.length && sugg) sugg.hidden = true;
   }
 
@@ -96,8 +104,9 @@
       if (!r.ok || !j.ok) {
         add("bot", esc(j.error || (hasBn(q) ? "দুঃখিত, এখন উত্তর দিতে পারছি না। একটু পরে আবার চেষ্টা করুন।" : "Sorry, I couldn't answer right now. Please try again.")), "err");
       } else {
-        add("bot", md(j.answer));
-        history.push({ role: "user", content: q }, { role: "assistant", content: j.answer });
+        const sources = Array.isArray(j.sources) ? j.sources : [];
+        add("bot", md(j.answer) + renderSources(sources));
+        history.push({ role: "user", content: q }, { role: "assistant", content: j.answer, sources });
         history = history.slice(-12);
         try { sessionStorage.setItem("chat", JSON.stringify(history)); } catch (_) {}
       }

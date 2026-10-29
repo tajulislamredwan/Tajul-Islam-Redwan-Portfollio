@@ -270,6 +270,9 @@ body.chat-open .chat-fab { display: none; }
 .bubble ul, .bubble ol { margin: .2em 0 .6em; padding-left: 1.2em; } .bubble li { margin: .15em 0; }
 .bubble code { background: #eef1f6; padding: 1px 5px; border-radius: 5px; font-size: .88em; }
 .bubble a { color: var(--steel); text-decoration: underline; }
+.bubble .sources { margin-top: .65em; padding-top: .45em; border-top: 1px solid var(--line); font-size: .82em; }
+.bubble .sources ul { margin: .2em 0 0; }
+.bubble .sources li { margin: .1em 0; }
 .bubble [lang="bn"], .bubble:lang(bn) { font-family: var(--bn); }
 .chat-sugg { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
 .chat-sugg button { border: 1px solid #d9dee8; background: #fff; color: var(--ink); border-radius: 999px; padding: 7px 12px; font: 500 .85rem/1.3 var(--body); cursor: pointer; text-align: left; }
