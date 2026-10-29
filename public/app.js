@@ -5,6 +5,7 @@
   const safeUrl = (u) => (typeof u === "string" && /^(https?:|mailto:|\/)/i.test(u) ? u : "");
   const visible = (arr) => (Array.isArray(arr) ? arr.filter((x) => x && !x.hidden) : []);
   const ext = (u, label, cls = "more") => (safeUrl(u) ? `<a class="${cls}" href="${esc(u)}" target="_blank" rel="noopener">${esc(label || "Open")} ↗</a>` : "");
+  const download = (u, label, cls = "more") => (safeUrl(u) ? `<a class="${cls}" href="${esc(u)}" download>${esc(label || "Download")}</a>` : "");
   const initials = (s) => String(s).replace(/[^A-Za-z\s]/g, "").split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase() || "•";
 
   const ICONS = {
@@ -81,6 +82,7 @@
         ${v.description ? `<p>${esc(v.description)}</p>` : ""}
         ${visible(v.highlights).length ? `<div class="hl">${v.highlights.map((h) => `<span>${esc(h)}</span>`).join("")}</div>` : ""}
         ${ext(v.link, v.linkLabel || "Learn more")}
+        ${download(v.downloadUrl, v.downloadLabel || "Download")}
       </article>`).join("");
 
     $("#experience-list").innerHTML = visible(c.experience).map((e) => `
