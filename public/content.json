@@ -35,23 +35,24 @@
     {
       "name": "FriendStar",
       "nameBn": "",
-      "type": "Messenger web app · Live",
+      "type": "Messenger app · Web & Android · Live",
       "role": "Creator",
       "period": "2026 – Present",
       "tagline": "Chat with the people who make you shine.",
-      "description": "My own messenger app, live with a real backend, for friends and groups: real-time chats, 24-hour status updates and one-to-one voice and video calls. Group calls are coming soon.",
+      "description": "My own messenger app, live with a real backend, for friends and groups: real-time chats, 24-hour status updates and one-to-one voice and video calls. Group calls are coming soon. The Android app is available as a release-signed build (v1.0.2).",
       "highlights": [
         "Real-time chat with sent, delivered and read ticks",
         "Group chats, plus 24-hour status updates",
         "Photos and files up to 10 MB",
         "One-to-one voice and video calls, straight between devices",
         "You choose who sees your last seen and photo",
-        "Light and dark mode"
+        "Light and dark mode",
+        "Android APK: public release-signed v1.0.2 (versionCode 2)"
       ],
       "link": "https://chat.friendstar.workers.dev",
       "linkLabel": "Open FriendStar",
-      "downloadUrl": "/downloads/FriendStar-1.0.1.apk",
-      "downloadLabel": "Download APK (v1.0.1)",
+      "downloadUrl": "/downloads/FriendStar-1.0.2.apk",
+      "downloadLabel": "Download Android APK (v1.0.2 · release-signed)",
       "minor": false,
       "image": "/assets/venture-friendstar-v2.webp"
     },
