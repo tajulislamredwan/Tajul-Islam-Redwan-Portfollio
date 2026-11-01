@@ -70,7 +70,8 @@
       ],
       "link": "https://khoni.jayan.workers.dev",
       "linkLabel": "Open Khooni Rishta",
-      "minor": false
+      "minor": false,
+      "image": "/images/khooni-rishta-homepage.webp"
     },
     {
       "name": "Adhunik Path",

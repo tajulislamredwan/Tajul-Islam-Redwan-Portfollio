@@ -50,7 +50,12 @@
     if (waUrl) { const w = $("#wa-link"); w.href = waUrl; w.hidden = false; $("#wa-text").textContent = "WhatsApp " + (p.whatsappDisplay || p.whatsapp); }
 
     const certs = visible(c.certifications), vols = visible(c.volunteering), posts = visible(c.robotics?.posts), arts = visible(c.articles);
-    const vent = visible(c.ventures).slice().sort((x, y) => (x.minor ? 1 : 0) - (y.minor ? 1 : 0));
+    const vent = visible(c.ventures).map((v) => {
+      if (!safeUrl(v.image) && /^https:\/\/khoni\.jayan\.workers\.dev\/?$/i.test(v.link || "")) {
+        return { ...v, image: "/images/khooni-rishta-homepage.webp" };
+      }
+      return v;
+    }).slice().sort((x, y) => (x.minor ? 1 : 0) - (y.minor ? 1 : 0));
     const main = vent.filter((v) => !v.minor);
     const curExp = visible(c.experience).filter((e) => /present/i.test(e.period || "") && !vent.some((v) => (e.org || "").startsWith(v.name))).slice(0, 1);
     $("#stats").innerHTML = [
