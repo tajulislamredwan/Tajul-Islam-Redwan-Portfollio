@@ -33,6 +33,19 @@
   ],
   "ventures": [
     {
+      "name": "Adhunik Style 1st Website",
+      "nameBn": "",
+      "type": "Project",
+      "role": "",
+      "period": "",
+      "tagline": "",
+      "description": "This Website Is closed by Adhunik Style",
+      "highlights": [],
+      "link": "",
+      "linkLabel": "",
+      "minor": false
+    },
+    {
       "name": "FriendStar",
       "nameBn": "",
       "type": "Messenger app · Web & Android · Live",
@@ -93,11 +106,11 @@
       "image": "/assets/venture-adhunik-path.webp"
     },
     {
-      "name": "Adhunik Style",
+      "name": "ADHUNIK STYLE",
       "type": "Fashion brand",
       "role": "Owner",
       "period": "Feb 2026 – May 2026",
-      "tagline": "Your Style, Your Identity — Redefine yourself with Adhunik Style",
+      "tagline": "Your Style / Your Identity / Redefine yourself with Adhunik Style",
       "description": "A fashion brand, closed in May 2026. Its first website had already been closed by Adhunik Style.",
       "highlights": [],
       "link": "",
@@ -111,7 +124,7 @@
       "type": "Project · Mar 2026",
       "role": "Creator",
       "period": "Mar 2026",
-      "tagline": "আপনার বুদ্ধিমান ফ্যাশন অ্যাসিস্ট্যান্ট — your intelligent fashion assistant",
+      "tagline": "আপনার বুদ্ধিমান ফ্যাশন অ্যাসিস্ট্যান্ট",
       "description": "An AI fashion-assistant project listed on my LinkedIn profile.",
       "highlights": [],
       "link": "",
@@ -119,13 +132,13 @@
       "minor": true
     },
     {
-      "name": "Personal portfolio",
+      "name": "Tajul Islam Redwan Portfollio",
       "nameBn": "",
       "type": "Project · Feb 2026",
       "role": "Creator",
       "period": "Feb 2026",
       "tagline": "",
-      "description": "\"Tajul Islam Redwan Portfolio\" — a personal portfolio project listed on my LinkedIn profile. This website is its newer version.",
+      "description": "\"Tajul Islam Redwan Portfollio\" — a personal portfolio project listed on my LinkedIn profile. This website is its newer version.",
       "highlights": [],
       "link": "",
       "linkLabel": "",
@@ -226,7 +239,7 @@
     {
       "role": "Representative",
       "org": "SHOLO — ষোলো",
-      "period": "Jun 2025 – Present",
+      "period": "Jan 2025 – Present",
       "cause": "Education",
       "logo": "/assets/org-sholo.webp"
     },
@@ -328,7 +341,7 @@
     },
     {
       "title": "Career With AI",
-      "issuer": "Grameenphone Academy",
+      "issuer": "Grameenphone Ltd",
       "date": "Nov 2025",
       "category": "Robotics & AI",
       "credentialId": "d346dad17535",
