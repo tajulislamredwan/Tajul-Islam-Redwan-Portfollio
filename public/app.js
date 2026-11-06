@@ -119,10 +119,11 @@
       const withImg = list.filter((x) => safeUrl(x.image)), rest = list.filter((x) => !safeUrl(x.image));
       $("#cert-list").innerHTML = (withImg.length ? `<div class="cert-feature">${withImg.map(certCard).join("")}</div>` : "")
         + (rest.length ? `<div class="cert-compact">${rest.map(certCard).join("")}</div>` : "");
+      $("#cert-list").querySelectorAll(".cert").forEach((el) => el.classList.add("reveal"));
       document.querySelectorAll("#cert-filters button").forEach((b) => b.setAttribute("aria-selected", b.dataset.cat === cat));
     };
     $("#cert-filters").innerHTML = cats.map((k) => `<button role="tab" data-cat="${esc(k)}">${esc(k)}</button>`).join("");
-    $("#cert-filters").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) drawCerts(b.dataset.cat); });
+    $("#cert-filters").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { drawCerts(b.dataset.cat); setupReveal($("#cert-list")); } });
     drawCerts("All");
     $("#cert-list").addEventListener("click", (e) => {
       const a = e.target.closest("a.c-img[data-full]"); if (!a) return;
@@ -164,8 +165,8 @@
     setupReveal();
   }
 
-  function setupReveal() {
-    const els = document.querySelectorAll(".reveal");
+  function setupReveal(root = document) {
+    const els = root.querySelectorAll(".reveal:not(.in)");
     if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) { els.forEach((e) => e.classList.add("in")); return; }
     const io = new IntersectionObserver((ents) => ents.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } }), { rootMargin: "0px 0px -40px 0px" });
     els.forEach((e) => io.observe(e));
