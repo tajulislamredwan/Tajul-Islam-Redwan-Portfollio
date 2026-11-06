@@ -41,16 +41,7 @@
       "role": "Creator",
       "period": "2026 – Present",
       "tagline": "Chat with the people who make you shine.",
-      "description": "My own messenger app, live with a real backend, for friends and groups: real-time chats, 24-hour status updates and one-to-one voice and video calls. Group calls are coming soon. The Android app is available as a release-signed build (v1.0.2).",
-      "highlights": [
-        "Real-time chat with sent, delivered and read ticks",
-        "Group chats, plus 24-hour status updates",
-        "Photos and files up to 10 MB",
-        "One-to-one voice and video calls, straight between devices",
-        "You choose who sees your last seen and photo",
-        "Light and dark mode",
-        "Android APK: public release-signed v1.0.2 (versionCode 2)"
-      ],
+      "description": "A web and Android messenger built to help friends and groups stay connected. A release-signed Android app is available to download.",
       "link": "https://chat.friendstar.workers.dev",
       "linkLabel": "Open FriendStar",
       "downloadUrl": "/downloads/FriendStar-1.0.2.apk",
@@ -709,50 +700,6 @@
     {
       "name": "Turkish",
       "level": "Elementary"
-    }
-  ],
-  "honors": [
-    {
-      "title": "The Climate Change Convention",
-      "issuer": "UN CC:Learn",
-      "date": "Mar 2026",
-      "note": "Badge — course: Climate Change International Legal Regime",
-      "logo": "/assets/logo-uncclearn.webp"
-    },
-    {
-      "title": "The Kyoto Protocol",
-      "issuer": "UN CC:Learn",
-      "date": "Mar 2026",
-      "note": "Badge — course: Climate Change International Legal Regime",
-      "logo": "/assets/logo-uncclearn.webp"
-    },
-    {
-      "title": "The Paris Agreement",
-      "issuer": "UN CC:Learn",
-      "date": "Mar 2026",
-      "note": "Badge — course: Climate Change International Legal Regime",
-      "logo": "/assets/logo-uncclearn.webp"
-    },
-    {
-      "title": "Gender Equality and Human Rights in Climate Action and Renewable Energy — Module 1",
-      "issuer": "One UN Climate Change Learning Partnership",
-      "date": "Jan 2025",
-      "note": "Badge for passing the Module 1 quiz",
-      "logo": "/assets/logo-uncclearn.webp"
-    },
-    {
-      "title": "Gender Equality and Human Rights in Climate Action and Renewable Energy — Module 2",
-      "issuer": "One UN Climate Change Learning Partnership",
-      "date": "Jan 2025",
-      "note": "Badge for passing the Module 2 quiz",
-      "logo": "/assets/logo-uncclearn.webp"
-    },
-    {
-      "title": "Gender Equality and Human Rights in Climate Action and Renewable Energy — Module 3",
-      "issuer": "One UN Climate Change Learning Partnership",
-      "date": "Jan 2025",
-      "note": "",
-      "logo": "/assets/logo-uncclearn.webp"
     }
   ]
 }

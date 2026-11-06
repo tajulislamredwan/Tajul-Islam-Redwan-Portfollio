@@ -128,10 +128,6 @@
       const a = e.target.closest("a.c-img[data-full]"); if (!a) return;
       e.preventDefault(); openLightbox(a.dataset.full.split("|"), a.dataset.title || "", a);
     });
-    const honors = visible(c.honors), hw = $("#honors-wrap");
-    if (hw) { hw.hidden = !honors.length; $("#honor-list").innerHTML = honors.map((h) => `
-      <li class="honor reveal">${safeUrl(h.logo) ? `<img src="${esc(h.logo)}" alt="" width="36" height="36">` : ""}
-      <div><strong>${esc(h.title)}</strong><span>${esc([h.issuer, h.date].filter(Boolean).join(" · "))}</span>${h.note ? `<em>${esc(h.note)}</em>` : ""}</div></li>`).join(""); }
 
     $("#skills-list").innerHTML = visible(c.skills).map((g) => `
       <div class="skill-group"><h4>${esc(g.group)}</h4><div class="tags">${(g.items || []).map((i) => `<span>${esc(i)}</span>`).join("")}</div></div>`).join("");
