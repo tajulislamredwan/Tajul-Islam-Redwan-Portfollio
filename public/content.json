@@ -587,6 +587,14 @@
   },
   "articles": [
     {
+      "title": "জাতীয় বিপ্লব ও সংহতি দিবসের তাৎপর্য",
+      "where": "Portfolio article",
+      "image": "/assets/national-unity-cover.png",
+      "downloadUrl": "/assets/national-unity-article.pdf",
+      "downloadLabel": "Download full article (PDF)",
+      "lang": "bn"
+    },
+    {
       "title": "কেন বই পড়বেন?",
       "subtitle": "এক নিঃশব্দ বিপ্লবের গল্প — Why read books?",
       "where": "LinkedIn article",

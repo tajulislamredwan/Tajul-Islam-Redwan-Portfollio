@@ -152,7 +152,9 @@
         <div class="body"><h3 lang="${esc(a.lang || "bn")}">${esc(a.title)}</h3>
         ${a.subtitle ? `<p class="subtitle" lang="bn">${esc(a.subtitle)}</p>` : ""}
         <div class="meta">${esc([a.where, a.date].filter(Boolean).join(" · "))}</div>
-        ${safeUrl(a.link) ? ext(a.link, "Read article") : `<span class="na">Public link not available yet</span>`}</div>
+        ${safeUrl(a.link) ? ext(a.link, a.linkLabel || "Read article") : ""}
+        ${download(a.downloadUrl, a.downloadLabel || "Download full article (PDF)")}
+        ${!safeUrl(a.link) && !safeUrl(a.downloadUrl) ? `<span class="na">Public link not available yet</span>` : ""}</div>
       </article>`).join("");
 
     if (p.email) {
