@@ -143,16 +143,20 @@
     const all = $("#all-posts");
     if (p.links?.linkedinActivity) all.href = p.links.linkedinActivity; else all.remove();
 
-    $("#article-list").innerHTML = arts.map((a) => `
-      <article class="card article reveal">
-        ${safeUrl(a.image) ? `<div class="thumb"><img src="${esc(a.image)}" alt="" loading="lazy"></div>` : ""}
-        <div class="body"><h3 lang="${esc(a.lang || "bn")}">${esc(a.title)}</h3>
+    $("#article-list").innerHTML = arts.map((a) => {
+      const pageUrl = safeUrl(a.pageUrl) ? a.pageUrl : (a.title === "জাতীয় বিপ্লব ও সংহতি দিবসের তাৎপর্য" ? "/articles/national-unity.html" : "");
+      const pageLink = safeUrl(pageUrl);
+      const image = safeUrl(a.image) ? `<div class="thumb"><img src="${esc(a.image)}" alt="" loading="lazy"></div>` : "";
+      return `<article class="card article reveal">
+        ${pageLink && image ? `<a class="article-open" href="${esc(pageUrl)}" aria-label="Read full article: ${esc(a.title)}">${image}</a>` : image}
+        <div class="body"><h3 lang="${esc(a.lang || "bn")}">${pageLink ? `<a href="${esc(pageUrl)}">${esc(a.title)}</a>` : esc(a.title)}</h3>
         ${a.subtitle ? `<p class="subtitle" lang="bn">${esc(a.subtitle)}</p>` : ""}
         <div class="meta">${esc([a.where, a.date].filter(Boolean).join(" · "))}</div>
-        ${safeUrl(a.link) ? ext(a.link, a.linkLabel || "Read article") : ""}
+        ${pageLink ? `<a class="more article-read" href="${esc(pageUrl)}">Read full article ↗</a>` : safeUrl(a.link) ? ext(a.link, a.linkLabel || "Read article") : ""}
         ${download(a.downloadUrl, a.downloadLabel || "Download full article (PDF)")}
-        ${!safeUrl(a.link) && !safeUrl(a.downloadUrl) ? `<span class="na">Public link not available yet</span>` : ""}</div>
-      </article>`).join("");
+        ${!pageLink && !safeUrl(a.link) && !safeUrl(a.downloadUrl) ? `<span class="na">Public link not available yet</span>` : ""}</div>
+      </article>`;
+    }).join("");
 
     if (p.email) {
       $("#email-link").href = "mailto:" + p.email;
