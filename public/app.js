@@ -144,7 +144,7 @@
     if (p.links?.linkedinActivity) all.href = p.links.linkedinActivity; else all.remove();
 
     $("#article-list").innerHTML = arts.map((a) => {
-      const pageUrl = safeUrl(a.pageUrl) ? a.pageUrl : (a.title === "জাতীয় বিপ্লব ও সংহতি দিবসের তাৎপর্য" ? "/articles/national-unity.html" : "");
+      const pageUrl = safeUrl(a.pageUrl) ? a.pageUrl : (a.title === "জাতীয় বিপ্লব ও সংহতি দিবসের তাৎপর্য" ? "/articles/national-unity" : "");
       const pageLink = safeUrl(pageUrl);
       const image = safeUrl(a.image) ? `<div class="thumb"><img src="${esc(a.image)}" alt="" loading="lazy"></div>` : "";
       return `<article class="card article reveal">
