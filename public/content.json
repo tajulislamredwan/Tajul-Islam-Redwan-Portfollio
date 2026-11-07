@@ -636,7 +636,7 @@
   ],
   "skills": [
     {
-      "group": "Engineering interests",
+      "group": "Core skills",
       "items": [
         "Mechanical design",
         "Robotics",
@@ -646,34 +646,18 @@
       ]
     },
     {
-      "group": "AI & digital tools",
+      "group": "Additional skills",
       "items": [
-        "ChatGPT",
-        "Gemini",
-        "Claude",
-        "Copilot",
-        "Grok",
-        "Lovable",
-        "Microsoft Office"
-      ]
-    },
-    {
-      "group": "Business",
-      "items": [
-        "Sales (NSDA Level 3)",
-        "Affiliate marketing",
-        "Digital marketing",
-        "Branding",
-        "Customer service"
-      ]
-    },
-    {
-      "group": "People",
-      "items": [
-        "Volunteering & community work",
-        "Campus ambassador roles",
-        "Debate",
-        "Writing in Bengali & English"
+        "Mechanical Engineering",
+        "Mechanical Design",
+        "Product Development",
+        "Robotics & AI",
+        "AI Agents & Automation",
+        "Full-Stack Web Development",
+        "AI-Driven Solutions",
+        "Sustainable & Green Technology",
+        "Entrepreneurship & Business Strategy",
+        "Branding & Digital Marketing"
       ]
     }
   ],
