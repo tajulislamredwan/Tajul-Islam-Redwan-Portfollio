@@ -125,6 +125,15 @@
       "minor": true
     }
   ],
+  "testimonials": [
+    {
+      "quote": "Brother Tajul Islam Redwan, thank you sincerely for creating such an excellent website for Proborton within such a short period of time. The website has a smart, clean, and user-friendly design. Its efficient backend makes receiving and managing orders extremely easy. Your creativity, technical expertise, and commitment to delivering quality work are truly commendable. Without a doubt, this is a highly professional and effective piece of work.",
+      "name": "Mohammad Saikot",
+      "title": "Founder",
+      "organization": "Proborton (প্রবর্তন)",
+      "website": "https://pro.bortton.workers.dev"
+    }
+  ],
   "experience": [
     {
       "role": "Affiliate Marketer",

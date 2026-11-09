@@ -49,7 +49,7 @@
     $("#socials-2").innerHTML = social.filter((s) => !s.includes("mailto:") && !s.includes("WhatsApp")).join("");
     if (waUrl) { const w = $("#wa-link"); w.href = waUrl; w.hidden = false; $("#wa-text").textContent = "WhatsApp " + (p.whatsappDisplay || p.whatsapp); }
 
-    const certs = visible(c.certifications), vols = visible(c.volunteering), posts = visible(c.robotics?.posts), arts = visible(c.articles);
+    const certs = visible(c.certifications), vols = visible(c.volunteering), posts = visible(c.robotics?.posts), arts = visible(c.articles), testimonials = visible(c.testimonials);
     const vent = visible(c.ventures).map((v) => {
       if (!safeUrl(v.image) && /^https:\/\/khoni\.jayan\.workers\.dev\/?$/i.test(v.link || "")) {
         return { ...v, image: "/images/khooni-rishta-homepage.webp" };
@@ -88,6 +88,15 @@
         ${visible(v.highlights).length ? `<div class="hl">${v.highlights.map((h) => `<span>${esc(h)}</span>`).join("")}</div>` : ""}
         ${ext(v.link, v.linkLabel || "Learn more")}
         ${download(v.downloadUrl, v.downloadLabel || "Download")}
+      </article>`).join("");
+
+    $("#testimonials-list").innerHTML = testimonials.map((t) => `
+      <article class="card testimonial reveal">
+        <span class="testimonial-mark" aria-hidden="true">“</span>
+        <blockquote>${esc(t.quote)}</blockquote>
+        <div class="testimonial-author"><strong>${esc(t.name)}</strong><span>${esc([t.title, t.organization].filter(Boolean).join(", "))}</span>
+          ${safeUrl(t.website) ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">${esc(t.website.replace(/^https?:\/\//i, ""))} ↗</a>` : ""}
+        </div>
       </article>`).join("");
 
     $("#experience-list").innerHTML = visible(c.experience).map((e) => `

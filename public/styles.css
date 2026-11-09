@@ -143,6 +143,17 @@ h3 { font-size: 1.15rem; }
 .hl span { font-size: .8rem; background: #ecfdf5; color: #065f46; padding: 4px 10px; border-radius: 8px; font-weight: 500; }
 .venture .more { margin-top: auto; padding-top: 8px; font-weight: 600; font-size: .92rem; }
 
+/* Testimonials */
+.testimonial-grid { display: grid; grid-template-columns: minmax(0, 820px); gap: 22px; margin-top: 28px; }
+.testimonial { position: relative; overflow: hidden; padding: clamp(24px, 4vw, 40px); }
+.testimonial::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: linear-gradient(180deg, var(--accent), #ff7a45); }
+.testimonial-mark { display: block; color: var(--accent); font-family: Georgia, serif; font-size: 4rem; line-height: .7; margin-bottom: 18px; }
+.testimonial blockquote { margin: 0; color: var(--ink-2); font-size: clamp(1.02rem, 1.7vw, 1.18rem); line-height: 1.8; }
+.testimonial-author { display: grid; gap: 2px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); }
+.testimonial-author strong { font-family: var(--head); color: var(--ink); font-size: 1.05rem; }
+.testimonial-author span { color: var(--muted); font-size: .93rem; }
+.testimonial-author a { width: fit-content; margin-top: 4px; font-size: .9rem; font-weight: 600; }
+
 /* Timeline */
 .timeline { list-style: none; margin: 18px 0 0; padding: 0; position: relative; }
 .timeline::before { content: ""; position: absolute; left: 9px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
