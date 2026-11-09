@@ -322,7 +322,7 @@ export class SiteStore extends DurableObject {
       if (path === "/api/admin/content") {
         if (method === "GET") {
           const c = this.getContent();
-          return json({ ok: true, ...c, defaultContent, pending });
+          return json({ ok: true, ...c, defaultContent, pending: [] });
         }
         if (method === "PUT") {
           const body = await request.json().catch(() => null);

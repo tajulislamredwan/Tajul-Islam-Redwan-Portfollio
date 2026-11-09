@@ -123,6 +123,19 @@
       "link": "",
       "linkLabel": "",
       "minor": true
+    },
+    {
+      "name": "Proborton Diary — Bengali E-commerce & Order Management",
+      "nameBn": "",
+      "type": "First commercial project",
+      "role": "Developer",
+      "period": "",
+      "tagline": "",
+      "description": "A Bengali e-commerce platform for Proborton Diary with a live storefront, online ordering, home delivery and nationwide Sundarban Courier, stock management, bKash/Nagad advance-payment verification, customer reviews with admin approval, and a companion Android Admin app connected to the live backend.",
+      "highlights": [],
+      "link": "https://pro.bortton.workers.dev",
+      "linkLabel": "Visit live store",
+      "hidden": false
     }
   ],
   "testimonials": [
