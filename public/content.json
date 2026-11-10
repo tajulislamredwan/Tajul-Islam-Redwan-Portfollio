@@ -56,11 +56,7 @@
       "role": "Creator",
       "tagline": "A private space for four friends.",
       "description": "A private space for four friends, with admin-managed shared invites, real-time messaging, profiles and a photo-memory gallery.",
-      "highlights": [
-        "Khooni AI can search online and show source links",
-        "Cached pages can open offline; login, chat and live search need internet",
-        "AI-written summaries are currently unavailable because the production OpenAI key is not configured"
-      ],
+      "highlights": [],
       "link": "https://khoni.jayan.workers.dev",
       "linkLabel": "Open Khooni Rishta",
       "minor": false,
