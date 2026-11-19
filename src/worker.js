@@ -138,6 +138,7 @@ export class SiteStore extends DurableObject {
       CREATE TABLE IF NOT EXISTS sessions (token_hash TEXT PRIMARY KEY, expires_at INTEGER NOT NULL);
       CREATE TABLE IF NOT EXISTS rate (bucket TEXT PRIMARY KEY, count INTEGER NOT NULL, reset_at INTEGER NOT NULL);
       CREATE TABLE IF NOT EXISTS views (day TEXT PRIMARY KEY, count INTEGER NOT NULL);
+      CREATE TABLE IF NOT EXISTS daily_visitors (day TEXT NOT NULL, ip_hash TEXT NOT NULL, PRIMARY KEY (day, ip_hash));
       CREATE TABLE IF NOT EXISTS chats (day TEXT PRIMARY KEY, count INTEGER NOT NULL);
     `);
   }
@@ -200,9 +201,12 @@ export class SiteStore extends DurableObject {
     }
 
     if (path === "/api/view" && method === "POST") {
-      // Privacy-friendly: only a daily total is stored, no IPs, cookies or user agents.
-      if (this.rateLimit(`view:${ipHash}`, 30, 60 * 60 * 1000)) {
-        const day = new Date().toISOString().slice(0, 10);
+      const day = new Date().toISOString().slice(0, 10);
+      // Keep only today's salted hashes; aggregate daily totals remain in views.
+      this.sql.exec("DELETE FROM daily_visitors WHERE day < ?", day);
+      this.sql.exec("INSERT OR IGNORE INTO daily_visitors(day,ip_hash) VALUES(?,?)", day, ipHash);
+      const inserted = this.sql.exec("SELECT changes() AS inserted").toArray()[0]?.inserted || 0;
+      if (inserted) {
         this.sql.exec("INSERT INTO views(day,count) VALUES(?,1) ON CONFLICT(day) DO UPDATE SET count = count + 1", day);
       }
       return json({ ok: true });
