@@ -54,6 +54,9 @@
       if (!safeUrl(v.image) && /^https:\/\/khoni\.jayan\.workers\.dev\/?$/i.test(v.link || "")) {
         return { ...v, image: "/images/khooni-rishta-homepage.webp" };
       }
+      if (!safeUrl(v.image) && /^https:\/\/pro\.bortton\.workers\.dev\/?$/i.test(v.link || "")) {
+        return { ...v, image: "/images/proborton-homepage-desktop.png" };
+      }
       return v;
     }).slice().sort((x, y) => (x.minor ? 1 : 0) - (y.minor ? 1 : 0));
     const main = vent.filter((v) => !v.minor);
